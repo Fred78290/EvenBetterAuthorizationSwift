@@ -10,40 +10,54 @@
 		9BC3C3683099EE3700F2425A /* com.aldunelabs.caker.authorization in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4CD036715E7A2C300FDC22C /* com.aldunelabs.caker.authorization */; };
 		9BC3C36B3099F38600F2425A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BC3C3693099F38600F2425A /* Assets.xcassets */; };
 		9BC3C36C3099F38600F2425A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BC3C3693099F38600F2425A /* Assets.xcassets */; };
-		9BC3C37C309A02B600F2425A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC3C37A309A02B600F2425A /* main.swift */; };
+		9BC3C37C309A02B600F2425A /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC3C37A309A02B600F2425A /* Tool.swift */; };
 		A1B2C3D400000000000000A1 /* com.aldunelabs.samplecode.authorization.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000A2 /* com.aldunelabs.samplecode.authorization.plist */; };
 		B1B2C3D400000000000000B1 /* com.aldunelabs.samplecode.authorization.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000A2 /* com.aldunelabs.samplecode.authorization.plist */; };
 		B1B2C3D400000000000000B2 /* com.aldunelabs.caker.authorization in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4CD036715E7A2C300FDC22C /* com.aldunelabs.caker.authorization */; };
 		B1B2C3D400000000000000B3 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F715E7D4D4007554D3 /* ServiceManagement.framework */; };
 		E4AD7A881608DB4A00F594A2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4ED7B8315E79B83002AD912 /* Cocoa.framework */; };
-		E4AD7A8F1608DB4A00F594A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AD7A8E1608DB4A00F594A2 /* AppDelegate.m */; };
-		E4AD7A911608DB4A00F594A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AD7A901608DB4A00F594A2 /* main.m */; };
 		E4AD7AAB1608DCFC00F594A2 /* com.aldunelabs.caker.xpc.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4C32DCB16023A97002AFAB3 /* com.aldunelabs.caker.xpc.xpc */; };
-		E4AD7AAC1608DD8000F594A2 /* MainMenu-Sandboxed.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4AD7AAE1608DD8000F594A2 /* MainMenu-Sandboxed.xib */; };
 		E4AD7AB71609093B00F594A2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4AD7AB91609093B00F594A2 /* InfoPlist.strings */; };
-		E4AD7AC216090A3300F594A2 /* XPCService.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AD7AA11608DBEC00F594A2 /* XPCService.m */; };
-		E4AD7AC316090A3600F594A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AD7A9E1608DBEC00F594A2 /* main.m */; };
 		E4AD7AC416090AC700F594A2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F915E7D4D8007554D3 /* Security.framework */; };
 		E4C32DCC16023A97002AFAB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372FB15E7D4FE007554D3 /* Foundation.framework */; };
 		E4C32DE516024494002AFAB3 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F715E7D4D4007554D3 /* ServiceManagement.framework */; };
 		E4C32DE616024498002AFAB3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F915E7D4D8007554D3 /* Security.framework */; };
 		E4C32DEA16024D51002AFAB3 /* com.aldunelabs.caker.authorization in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4CD036715E7A2C300FDC22C /* com.aldunelabs.caker.authorization */; };
-		E4C32E781603536C002AFAB3 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CBCCEB15EBBB8D0081DF5C /* Common.m */; };
 		E4C372F815E7D4D4007554D3 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F715E7D4D4007554D3 /* ServiceManagement.framework */; };
 		E4C372FA15E7D4D8007554D3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F915E7D4D8007554D3 /* Security.framework */; };
 		E4C372FC15E7D4FE007554D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372FB15E7D4FE007554D3 /* Foundation.framework */; };
 		E4C776011603A68300C72EC0 /* Common.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4CBCCF215EBC55F0081DF5C /* Common.strings */; };
 		E4CBCCE315EBA7000081DF5C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F915E7D4D8007554D3 /* Security.framework */; };
-		E4CBCCE715EBA7550081DF5C /* HelperTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CBCCE615EBA7550081DF5C /* HelperTool.m */; };
-		E4CBCCEC15EBBB8D0081DF5C /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CBCCEB15EBBB8D0081DF5C /* Common.m */; };
-		E4CBCCED15EBBB8D0081DF5C /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CBCCEB15EBBB8D0081DF5C /* Common.m */; };
 		E4CBCCF015EBC55F0081DF5C /* Common.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4CBCCF215EBC55F0081DF5C /* Common.strings */; };
-		E4CBCCF315EBC58D0081DF5C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4CBCCF515EBC58D0081DF5C /* MainMenu.xib */; };
 		E4CBCD2A15EC191D0081DF5C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4CBCD2C15EC191D0081DF5C /* InfoPlist.strings */; };
-		E4CD036D15E7A2C300FDC22C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CD036C15E7A2C300FDC22C /* main.m */; };
 		E4ED7B8415E79B83002AD912 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4ED7B8315E79B83002AD912 /* Cocoa.framework */; };
-		E4ED7B8B15E79B83002AD912 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4ED7B8A15E79B83002AD912 /* AppDelegate.m */; };
-		E4ED7B8D15E79B83002AD912 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4ED7B8C15E79B83002AD912 /* main.m */; };
+		C0DE5A000000000000000102 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE5A000000000000000101 /* Common.swift */; };
+		C0DE5A000000000000000103 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE5A000000000000000101 /* Common.swift */; };
+		C0DE5A000000000000000104 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE5A000000000000000101 /* Common.swift */; };
+		C0DE5A000000000000000106 /* HelperToolProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE5A000000000000000105 /* HelperToolProtocol.swift */; };
+		C0DE5A000000000000000107 /* HelperToolProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE5A000000000000000105 /* HelperToolProtocol.swift */; };
+		C0DE5A000000000000000108 /* HelperToolProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE5A000000000000000105 /* HelperToolProtocol.swift */; };
+		C0DE5A000000000000000109 /* HelperToolProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE5A000000000000000105 /* HelperToolProtocol.swift */; };
+		C0DE5A00000000000000010B /* HelperTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE5A00000000000000010A /* HelperTool.swift */; };
+		C0DE5A00000000000000010D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE5A00000000000000010C /* main.swift */; };
+		C0DE5A00000000000000010F /* XPCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE5A00000000000000010E /* XPCService.swift */; };
+		C0DE5A000000000000000111 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE5A000000000000000110 /* main.swift */; };
+		C0DE5A000000000000000113 /* XPCServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE5A000000000000000112 /* XPCServiceProtocol.swift */; };
+		C0DE5A000000000000000114 /* XPCServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE5A000000000000000112 /* XPCServiceProtocol.swift */; };
+		C0DE5A000000000000000116 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE5A000000000000000115 /* AppDelegate.swift */; };
+		C0DE5A000000000000000117 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE5A000000000000000115 /* AppDelegate.swift */; };
+		C0DE5A000000000000000119 /* AuthorizationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE5A000000000000000118 /* AuthorizationModel.swift */; };
+		C0DE5A00000000000000011A /* AuthorizationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE5A000000000000000118 /* AuthorizationModel.swift */; };
+		C0DE5A00000000000000011C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE5A00000000000000011B /* ContentView.swift */; };
+		C0DE5A00000000000000011D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE5A00000000000000011B /* ContentView.swift */; };
+		C0DE5A00000000000000011F /* DirectHelperToolConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE5A00000000000000011E /* DirectHelperToolConnector.swift */; };
+		C0DE5A000000000000000121 /* EvenBetterAuthorizationSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE5A000000000000000120 /* EvenBetterAuthorizationSampleApp.swift */; };
+		C0DE5A000000000000000123 /* SandboxedHelperToolConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE5A000000000000000122 /* SandboxedHelperToolConnector.swift */; };
+		C0DE5A000000000000000125 /* EvenBetterAuthorizationSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE5A000000000000000124 /* EvenBetterAuthorizationSampleApp.swift */; };
+		C0DE5A0000000000000001A1 /* AboutCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE5A0000000000000001A0 /* AboutCommands.swift */; };
+		C0DE5A0000000000000001A2 /* AboutCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE5A0000000000000001A0 /* AboutCommands.swift */; };
+		C0DE5A0000000000000001B0 /* HelperToolProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE5A000000000000000105 /* HelperToolProtocol.swift */; };
+		C0DE5A0000000000000001B1 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = C0DE5A0000000000000001B3 /* ArgumentParser */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,30 +153,17 @@
 /* Begin PBXFileReference section */
 		9BC3C3693099F38600F2425A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BC3C373309A026300F2425A /* Tool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Tool; sourceTree = BUILT_PRODUCTS_DIR; };
-		9BC3C37A309A02B600F2425A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9BC3C37A309A02B600F2425A /* Tool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
 		9BC3C37D309A02DE00F2425A /* tool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = tool.entitlements; sourceTree = "<group>"; };
 		A1B2C3D400000000000000A2 /* com.aldunelabs.samplecode.authorization.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = com.aldunelabs.samplecode.authorization.plist; sourceTree = "<group>"; };
-		DA70FCE71884E921009FE52A /* SMJobBlessUtil.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = SMJobBlessUtil.py; sourceTree = "<group>"; };
 		DA70FCE81884E92A009FE52A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		E40FA42017ABE51300F6CB03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "Base.lproj/MainMenu-Sandboxed.xib"; sourceTree = "<group>"; };
-		E40FA42217ABE56300F6CB03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "en.lproj/MainMenu-Sandboxed.strings"; sourceTree = "<group>"; };
-		E40FA42317ABE58F00F6CB03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		E40FA42417ABE59600F6CB03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
-		E40FA42517ABE62000F6CB03 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/MainMenu.strings; sourceTree = "<group>"; };
-		E40FA42617ABE62000F6CB03 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = "de.lproj/MainMenu-Sandboxed.strings"; sourceTree = "<group>"; };
 		E40FA42717ABE62100F6CB03 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E40FA42817ABE62200F6CB03 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E40FA42917ABE62300F6CB03 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Common.strings; sourceTree = "<group>"; };
 		E456726C15E7E4B80050ECAB /* Uninstall.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = Uninstall.sh; sourceTree = "<group>"; };
 		E4AD7A861608DB4A00F594A2 /* EvenBetterAuthorizationSample-Sandboxed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EvenBetterAuthorizationSample-Sandboxed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4AD7A8A1608DB4A00F594A2 /* App-Sandboxed-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "App-Sandboxed-Info.plist"; sourceTree = "<group>"; };
-		E4AD7A8D1608DB4A00F594A2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E4AD7A8E1608DB4A00F594A2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E4AD7A901608DB4A00F594A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E4AD7A9E1608DBEC00F594A2 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E4AD7A9F1608DBEC00F594A2 /* XPCService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "XPCService-Info.plist"; sourceTree = "<group>"; };
-		E4AD7AA01608DBEC00F594A2 /* XPCService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPCService.h; sourceTree = "<group>"; };
-		E4AD7AA11608DBEC00F594A2 /* XPCService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPCService.m; sourceTree = "<group>"; };
 		E4AD7AB81609093B00F594A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E4C32DC516023990002AFAB3 /* App-Sandboxed.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "App-Sandboxed.entitlements"; sourceTree = "<group>"; };
 		E4C32DCB16023A97002AFAB3 /* com.aldunelabs.caker.xpc.xpc */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = com.aldunelabs.caker.xpc.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,26 +172,34 @@
 		E4C372F715E7D4D4007554D3 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		E4C372F915E7D4D8007554D3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		E4C372FB15E7D4FE007554D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		E4CBCCE515EBA7550081DF5C /* HelperTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelperTool.h; sourceTree = "<group>"; };
-		E4CBCCE615EBA7550081DF5C /* HelperTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelperTool.m; sourceTree = "<group>"; };
-		E4CBCCE915EBB50D0081DF5C /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
-		E4CBCCEB15EBBB8D0081DF5C /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
 		E4CBCCF115EBC55F0081DF5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Common.strings; sourceTree = "<group>"; };
 		E4CBCD2B15EC191D0081DF5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E4CD036715E7A2C300FDC22C /* com.aldunelabs.caker.authorization */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com.aldunelabs.caker.authorization; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4CD036C15E7A2C300FDC22C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E4ED7B7F15E79B83002AD912 /* EvenBetterAuthorizationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EvenBetterAuthorizationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4ED7B8315E79B83002AD912 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E4ED7B8615E79B83002AD912 /* App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "App-Info.plist"; sourceTree = "<group>"; };
-		E4ED7B8915E79B83002AD912 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E4ED7B8A15E79B83002AD912 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E4ED7B8C15E79B83002AD912 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C0DE5A000000000000000101 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		C0DE5A000000000000000105 /* HelperToolProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperToolProtocol.swift; sourceTree = "<group>"; };
+		C0DE5A00000000000000010A /* HelperTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperTool.swift; sourceTree = "<group>"; };
+		C0DE5A00000000000000010C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		C0DE5A00000000000000010E /* XPCService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPCService.swift; sourceTree = "<group>"; };
+		C0DE5A000000000000000110 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		C0DE5A000000000000000112 /* XPCServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPCServiceProtocol.swift; sourceTree = "<group>"; };
+		C0DE5A000000000000000115 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C0DE5A000000000000000118 /* AuthorizationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationModel.swift; sourceTree = "<group>"; };
+		C0DE5A00000000000000011B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C0DE5A00000000000000011E /* DirectHelperToolConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectHelperToolConnector.swift; sourceTree = "<group>"; };
+		C0DE5A000000000000000120 /* EvenBetterAuthorizationSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvenBetterAuthorizationSampleApp.swift; sourceTree = "<group>"; };
+		C0DE5A000000000000000122 /* SandboxedHelperToolConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandboxedHelperToolConnector.swift; sourceTree = "<group>"; };
+		C0DE5A000000000000000124 /* EvenBetterAuthorizationSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvenBetterAuthorizationSampleApp.swift; sourceTree = "<group>"; };
+		C0DE5A0000000000000001A0 /* AboutCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCommands.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9BC3C370309A026300F2425A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
+				C0DE5A0000000000000001B1 /* ArgumentParser in Frameworks */,
 			);
 		};
 		E4AD7A831608DB4A00F594A2 /* Frameworks */ = {
@@ -238,7 +247,7 @@
 		9BC3C37B309A02B600F2425A /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				9BC3C37A309A02B600F2425A /* main.swift */,
+				9BC3C37A309A02B600F2425A /* Tool.swift */,
 				9BC3C37D309A02DE00F2425A /* tool.entitlements */,
 			);
 			path = Tool;
@@ -247,13 +256,11 @@
 		E4AD7A891608DB4A00F594A2 /* App-Sandboxed */ = {
 			isa = PBXGroup;
 			children = (
+				C0DE5A000000000000000122 /* SandboxedHelperToolConnector.swift */,
+				C0DE5A000000000000000124 /* EvenBetterAuthorizationSampleApp.swift */,
 				E4AD7A8A1608DB4A00F594A2 /* App-Sandboxed-Info.plist */,
 				E4AD7AB91609093B00F594A2 /* InfoPlist.strings */,
 				E4C32DC516023990002AFAB3 /* App-Sandboxed.entitlements */,
-				E4AD7A901608DB4A00F594A2 /* main.m */,
-				E4AD7AAE1608DD8000F594A2 /* MainMenu-Sandboxed.xib */,
-				E4AD7A8D1608DB4A00F594A2 /* AppDelegate.h */,
-				E4AD7A8E1608DB4A00F594A2 /* AppDelegate.m */,
 				E4AD7A9D1608DBEC00F594A2 /* XPCService */,
 			);
 			path = "App-Sandboxed";
@@ -262,10 +269,10 @@
 		E4AD7A9D1608DBEC00F594A2 /* XPCService */ = {
 			isa = PBXGroup;
 			children = (
+				C0DE5A00000000000000010E /* XPCService.swift */,
+				C0DE5A000000000000000110 /* main.swift */,
+				C0DE5A000000000000000112 /* XPCServiceProtocol.swift */,
 				E4AD7A9F1608DBEC00F594A2 /* XPCService-Info.plist */,
-				E4AD7A9E1608DBEC00F594A2 /* main.m */,
-				E4AD7AA01608DBEC00F594A2 /* XPCService.h */,
-				E4AD7AA11608DBEC00F594A2 /* XPCService.m */,
 			);
 			path = XPCService;
 			sourceTree = "<group>";
@@ -273,8 +280,8 @@
 		E4CBCCE815EBB50D0081DF5C /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				E4CBCCE915EBB50D0081DF5C /* Common.h */,
-				E4CBCCEB15EBBB8D0081DF5C /* Common.m */,
+				C0DE5A000000000000000101 /* Common.swift */,
+				C0DE5A000000000000000105 /* HelperToolProtocol.swift */,
 				E4CBCCF215EBC55F0081DF5C /* Common.strings */,
 			);
 			path = Common;
@@ -283,12 +290,11 @@
 		E4CD036B15E7A2C300FDC22C /* HelperTool */ = {
 			isa = PBXGroup;
 			children = (
+				C0DE5A00000000000000010A /* HelperTool.swift */,
+				C0DE5A00000000000000010C /* main.swift */,
 				E4C372E315E7CC10007554D3 /* HelperTool-Info.plist */,
 				E4C372E415E7CC10007554D3 /* HelperTool-Launchd.plist */,
 				A1B2C3D400000000000000A2 /* com.aldunelabs.samplecode.authorization.plist */,
-				E4CD036C15E7A2C300FDC22C /* main.m */,
-				E4CBCCE515EBA7550081DF5C /* HelperTool.h */,
-				E4CBCCE615EBA7550081DF5C /* HelperTool.m */,
 			);
 			path = HelperTool;
 			sourceTree = "<group>";
@@ -296,8 +302,8 @@
 		E4ED7B7415E79B83002AD912 = {
 			isa = PBXGroup;
 			children = (
+				C0DE5A0000000000000000F0 /* AppShared */,
 				DA70FCE81884E92A009FE52A /* README.md */,
-				DA70FCE71884E921009FE52A /* SMJobBlessUtil.py */,
 				E456726C15E7E4B80050ECAB /* Uninstall.sh */,
 				E4ED7B8515E79B83002AD912 /* App */,
 				E4AD7A891608DB4A00F594A2 /* App-Sandboxed */,
@@ -336,14 +342,23 @@
 		E4ED7B8515E79B83002AD912 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				C0DE5A00000000000000011E /* DirectHelperToolConnector.swift */,
+				C0DE5A000000000000000120 /* EvenBetterAuthorizationSampleApp.swift */,
 				E4ED7B8615E79B83002AD912 /* App-Info.plist */,
 				E4CBCD2C15EC191D0081DF5C /* InfoPlist.strings */,
-				E4ED7B8C15E79B83002AD912 /* main.m */,
-				E4CBCCF515EBC58D0081DF5C /* MainMenu.xib */,
-				E4ED7B8915E79B83002AD912 /* AppDelegate.h */,
-				E4ED7B8A15E79B83002AD912 /* AppDelegate.m */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		C0DE5A0000000000000000F0 /* AppShared */ = {
+			isa = PBXGroup;
+			children = (
+				C0DE5A0000000000000001A0 /* AboutCommands.swift */,
+				C0DE5A000000000000000115 /* AppDelegate.swift */,
+				C0DE5A000000000000000118 /* AuthorizationModel.swift */,
+				C0DE5A00000000000000011B /* ContentView.swift */,
+			);
+			path = AppShared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,6 +375,9 @@
 			buildRules = (
 			);
 			name = Tool;
+			packageProductDependencies = (
+				C0DE5A0000000000000001B3 /* ArgumentParser */,
+			);
 			productName = Tool;
 			productReference = 9BC3C373309A026300F2425A /* Tool */;
 			productType = "com.apple.product-type.tool";
@@ -471,6 +489,9 @@
 				de,
 			);
 			mainGroup = E4ED7B7415E79B83002AD912;
+			packageReferences = (
+				C0DE5A0000000000000001B2 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
 			preferredProjectObjectVersion = 110;
 			productRefGroup = E4ED7B8015E79B83002AD912 /* Products */;
 			projectDirPath = "";
@@ -489,7 +510,6 @@
 		E4AD7A841608DB4A00F594A2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
-				E4AD7AAC1608DD8000F594A2 /* MainMenu-Sandboxed.xib in Resources */,
 				9BC3C36C3099F38600F2425A /* Assets.xcassets in Resources */,
 				E4AD7AB71609093B00F594A2 /* InfoPlist.strings in Resources */,
 			);
@@ -503,7 +523,6 @@
 		E4ED7B7D15E79B83002AD912 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
-				E4CBCCF315EBC58D0081DF5C /* MainMenu.xib in Resources */,
 				E4CBCCF015EBC55F0081DF5C /* Common.strings in Resources */,
 				9BC3C36B3099F38600F2425A /* Assets.xcassets in Resources */,
 				E4CBCD2A15EC191D0081DF5C /* InfoPlist.strings in Resources */,
@@ -515,38 +534,53 @@
 		9BC3C36F309A026300F2425A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
-				9BC3C37C309A02B600F2425A /* main.swift in Sources */,
+				C0DE5A0000000000000001B0 /* HelperToolProtocol.swift in Sources */,
+				9BC3C37C309A02B600F2425A /* Tool.swift in Sources */,
 			);
 		};
 		E4AD7A821608DB4A00F594A2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
-				E4AD7A8F1608DB4A00F594A2 /* AppDelegate.m in Sources */,
-				E4AD7A911608DB4A00F594A2 /* main.m in Sources */,
+				C0DE5A0000000000000001A2 /* AboutCommands.swift in Sources */,
+				C0DE5A000000000000000107 /* HelperToolProtocol.swift in Sources */,
+				C0DE5A000000000000000114 /* XPCServiceProtocol.swift in Sources */,
+				C0DE5A000000000000000117 /* AppDelegate.swift in Sources */,
+				C0DE5A00000000000000011A /* AuthorizationModel.swift in Sources */,
+				C0DE5A00000000000000011D /* ContentView.swift in Sources */,
+				C0DE5A000000000000000123 /* SandboxedHelperToolConnector.swift in Sources */,
+				C0DE5A000000000000000125 /* EvenBetterAuthorizationSampleApp.swift in Sources */,
 			);
 		};
 		E4C32DC716023A97002AFAB3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
-				E4C32E781603536C002AFAB3 /* Common.m in Sources */,
-				E4AD7AC216090A3300F594A2 /* XPCService.m in Sources */,
-				E4AD7AC316090A3600F594A2 /* main.m in Sources */,
+				C0DE5A000000000000000103 /* Common.swift in Sources */,
+				C0DE5A000000000000000108 /* HelperToolProtocol.swift in Sources */,
+				C0DE5A00000000000000010F /* XPCService.swift in Sources */,
+				C0DE5A000000000000000111 /* main.swift in Sources */,
+				C0DE5A000000000000000113 /* XPCServiceProtocol.swift in Sources */,
 			);
 		};
 		E4CD036415E7A2C300FDC22C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
-				E4CD036D15E7A2C300FDC22C /* main.m in Sources */,
-				E4CBCCE715EBA7550081DF5C /* HelperTool.m in Sources */,
-				E4CBCCED15EBBB8D0081DF5C /* Common.m in Sources */,
+				C0DE5A000000000000000104 /* Common.swift in Sources */,
+				C0DE5A000000000000000109 /* HelperToolProtocol.swift in Sources */,
+				C0DE5A00000000000000010B /* HelperTool.swift in Sources */,
+				C0DE5A00000000000000010D /* main.swift in Sources */,
 			);
 		};
 		E4ED7B7B15E79B83002AD912 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
-				E4ED7B8B15E79B83002AD912 /* AppDelegate.m in Sources */,
-				E4ED7B8D15E79B83002AD912 /* main.m in Sources */,
-				E4CBCCEC15EBBB8D0081DF5C /* Common.m in Sources */,
+				C0DE5A0000000000000001A1 /* AboutCommands.swift in Sources */,
+				C0DE5A000000000000000102 /* Common.swift in Sources */,
+				C0DE5A000000000000000106 /* HelperToolProtocol.swift in Sources */,
+				C0DE5A000000000000000116 /* AppDelegate.swift in Sources */,
+				C0DE5A000000000000000119 /* AuthorizationModel.swift in Sources */,
+				C0DE5A00000000000000011C /* ContentView.swift in Sources */,
+				C0DE5A00000000000000011F /* DirectHelperToolConnector.swift in Sources */,
+				C0DE5A000000000000000121 /* EvenBetterAuthorizationSampleApp.swift in Sources */,
 			);
 		};
 /* End PBXSourcesBuildPhase section */
@@ -575,16 +609,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E4AD7AAE1608DD8000F594A2 /* MainMenu-Sandboxed.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E40FA42017ABE51300F6CB03 /* Base */,
-				E40FA42217ABE56300F6CB03 /* en */,
-				E40FA42617ABE62000F6CB03 /* de */,
-			);
-			name = "MainMenu-Sandboxed.xib";
-			sourceTree = "<group>";
-		};
 		E4AD7AB91609093B00F594A2 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -601,16 +625,6 @@
 				E40FA42917ABE62300F6CB03 /* de */,
 			);
 			name = Common.strings;
-			sourceTree = "<group>";
-		};
-		E4CBCCF515EBC58D0081DF5C /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E40FA42317ABE58F00F6CB03 /* Base */,
-				E40FA42417ABE59600F6CB03 /* en */,
-				E40FA42517ABE62000F6CB03 /* de */,
-			);
-			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 		E4CBCD2C15EC191D0081DF5C /* InfoPlist.strings */ = {
@@ -739,6 +753,7 @@
 		E4AD7A921608DB4A00F594A2 /* Debug configuration for PBXNativeTarget "App-Sandboxed" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				SWIFT_VERSION = 5.0;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "App-Sandboxed/App-Sandboxed.entitlements";
@@ -761,6 +776,7 @@
 		E4AD7A931608DB4A00F594A2 /* Release configuration for PBXNativeTarget "App-Sandboxed" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				SWIFT_VERSION = 5.0;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "App-Sandboxed/App-Sandboxed.entitlements";
@@ -783,6 +799,7 @@
 		E4C32DD716023A97002AFAB3 /* Debug configuration for PBXNativeTarget "XPCService" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				SWIFT_VERSION = 5.0;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
@@ -801,6 +818,7 @@
 		E4C32DD816023A97002AFAB3 /* Release configuration for PBXNativeTarget "XPCService" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				SWIFT_VERSION = 5.0;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
@@ -819,6 +837,7 @@
 		E4CD036F15E7A2C300FDC22C /* Debug configuration for PBXNativeTarget "Authorization" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				SWIFT_VERSION = 5.0;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
@@ -846,6 +865,7 @@
 		E4CD037015E7A2C300FDC22C /* Release configuration for PBXNativeTarget "Authorization" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				SWIFT_VERSION = 5.0;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
@@ -965,6 +985,7 @@
 		E4ED7B9115E79B83002AD912 /* Debug configuration for PBXNativeTarget "App" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				SWIFT_VERSION = 5.0;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
@@ -987,6 +1008,7 @@
 		E4ED7B9215E79B83002AD912 /* Release configuration for PBXNativeTarget "App" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				SWIFT_VERSION = 5.0;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
@@ -1058,6 +1080,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C0DE5A0000000000000001B2 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C0DE5A0000000000000001B3 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0DE5A0000000000000001B2 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E4ED7B7615E79B83002AD912 /* Project object */;
 }

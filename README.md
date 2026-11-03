@@ -1,119 +1,90 @@
-# HelperTool + XPCService Project Setup
+# EvenBetterAuthorizationSwift
 
-This is how to set everything up (I believe) 
+A Swift / SwiftUI port of Apple's **EvenBetterAuthorizationSample**. It shows how to move privileged
+operations out of an app and into a launchd-managed privileged helper tool, reached over
+`NSXPCConnection` and guarded by Authorization Services rights.
 
->
-The original Apple Doc for this project can be found in README-APPLE
+Compared with Apple's original:
 
-In this example the 3 identifiers for the 3 targets are
+* All Objective-C is now Swift.
+* The `.xib` windows are replaced by a SwiftUI `Window` scene.
+* `SMJobBless` is replaced by `SMAppService`: the helper is a launch daemon whose plist is embedded
+  in the app bundle, not copied into `/Library/PrivilegedHelperTools`.
 
-Name | Identifier
-------------- | -------------
-Broker (Main app) | `com.blackwellapps.Broker`
-BrokerHelper (HelperTool) | `com.blackwellapps.BrokerHelper`
-XPCService | `com.blackwellapps.XPCService`
+Apple's original read-me is kept in [README-APPLE.md](README-APPLE.md) for background on the design.
+Parts of it (SMJobBless, the removed `SMJobBlessUtil.py` script, OS X 10.8) no longer apply.
 
----
+## Targets
 
-## 1 Add Copy File build phase
+| Target | Product | Bundle identifier | Purpose |
+| --- | --- | --- | --- |
+| `App` | `EvenBetterAuthorizationSample.app` | `com.aldunelabs.samplecode` | Standard app; talks to the helper directly. |
+| `App-Sandboxed` | `EvenBetterAuthorizationSample-Sandboxed.app` | `com.aldunelabs.samplecode` | Sandboxed app; goes through the XPC service. |
+| `XPCService` | `com.aldunelabs.caker.xpc.xpc` | `com.aldunelabs.samplecode.xpc` | Non-sandboxed service that connects to the helper and holds the authorization for the sandboxed app. |
+| `Authorization` | `com.aldunelabs.caker.authorization` | `com.aldunelabs.samplecode.authorization` | The privileged helper tool (Mach service `com.aldunelabs.samplecode.authorization`). |
+| `Tool` | `Tool` | `com.aldunelabs.samplecode.tool` | Command-line client (swift-argument-parser) for get-version, read-license and write-license. |
 
-**Main App**
-Add `Copy File` build phase to main app target: 
-Destination: Wrapper 
-Subpath: Contents/LibraryXPCServices, 
-Codesign on Copy:Disable.
+## Layout
 
-![screen shot 2015-04-17 at 15 35 48](https://cloud.githubusercontent.com/assets/802618/7202989/818cccd8-e517-11e4-84c9-8969aeb57430.png)
-
-**XPCService**
-Add `Copy File` build phase to XPCService target: 
-Destination: Wrapper 
-Subpath: Contents/Library/LaunchServices, 
-Codesign on Copy:Disable.
-
-![screen shot 2015-04-17 at 15 37 12](https://cloud.githubusercontent.com/assets/802618/7203009/b480a27c-e517-11e4-8279-43608d28934f.png)
-
----
-
-## 2 Modify Info.plists
-
-**XPCService-Info.plist** (Tools owned after installation)
-
-Add a new key value pair to the **XPCService's** `Info.plist` 
-* **Key:** *"Tools owned after installation"*
-* **Type:** dictionary
-  
-Inside this new dictionary add a another key value pair: 
-* **Key:** `Your helper's bundle identifier`
-* **Type:** string
-* **Value:** *"anchor apple generic and certificate leaf[subject.CN] = `Certificate Name` and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */"*
-  
-![screen shot 2015-04-17 at 15 55 47](https://cloud.githubusercontent.com/assets/802618/7203345/43782dfe-e51a-11e4-8bf9-4286b5045e45.png)
-
-**HelperTool-Info.plist** (Clients allowed to add and remove tool)
-
-Add a new key value pair the HelperTools's `Info.plist` 
-* **Key:** *"Clients allowed to add and remove tool"*
-* **Type:** array
-
-As this is an array, we will add a new item to the 0 index:
-* **Key/Position:** "Item 0"
-* **Type:** string
-* **Value:** *"identifier `XPCService identifier` and anchor apple generic and certificate leaf[subject.CN] = `Certificate Name` and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */"*
-
-![screen shot 2015-04-17 at 15 38 38](https://cloud.githubusercontent.com/assets/802618/7203043/f3ea52e6-e517-11e4-8f8b-7c2bda6cb2cf.png)
-
----
-
-## 3 Developer ID
-Choose Developer ID:* in Code Signing Identity in build settings for each targets.
-
-**Main App**
-
-![screen shot 2015-04-17 at 15 46 53](https://cloud.githubusercontent.com/assets/802618/7203194/2607019c-e519-11e4-8218-017742d072dc.png)
-
-**XPCService**
-
-![screen shot 2015-04-17 at 15 46 45](https://cloud.githubusercontent.com/assets/802618/7203200/2e3bfef8-e519-11e4-9140-e3ef4d3b3b67.png)
-
-**HelperTool**
-
-![screen shot 2015-04-17 at 15 46 59](https://cloud.githubusercontent.com/assets/802618/7203182/1e527af8-e519-11e4-92ed-50a399e0d714.png)
-
----
-
-## 4 Build
-Build the app.
-
----
-
-## 5 SMJobBlessUtil.py
-Use `SMJobBlessUtil.py` cli script
-
-  **Update Info.plist:**
-
-  Format: `$ ./SMJobBlessUtil.py setreq <XPCService path> <XPCService's Info.plist path> <Helper's Info.plist>`
-
-```shell
-./SMJobBlessUtil.py setreq Build/Products/Debug/com.blackwellapps.XPCService.xpc XPCService/XPCService-Info.plist BrokerHelper/HelperTool-Info.plist HelperTool/HelperTool-Info.plist
 ```
-  
-  **Check Code Signing status:**
-  
-  Format: `$ ./SMJobBlessUtil.py check <XPCservice path>`
-  
-```shell
-./SMJobBlessUtil.py check Build/Products/Debug/com.blackwellapps.XPCService.xpc
+App/                 standard app entry point + DirectHelperToolConnector
+App-Sandboxed/       sandboxed app entry point + SandboxedHelperToolConnector
+  XPCService/        XPC service and its protocol
+AppShared/           SwiftUI ContentView, AuthorizationModel, AppDelegate (used by both apps)
+Common/              HelperToolProtocol and authorization rights (shared with the helper)
+HelperTool/          helper tool, its Info.plist, launchd plist and the daemon plist embedded in the app
+Tool/                command-line client
 ```
- 
----  
-  
-## Troubleshooting
-* If it doesn't pass the CLI `check` then make sure #3 is correct
-* Also Make sure each .plist file is set as Info.plist in the corresponding Target's Build settings.
 
----
+The window has five buttons and a log:
+
+| Button | What it does | Authorization right |
+| --- | --- | --- |
+| Install | Registers the daemon with `SMAppService`. | none |
+| Get Version | Asks the helper for its version. | none |
+| Read License | Reads the license key. | `readLicenseKey` (allowed for everyone) |
+| Write License | Writes a new random license key. | `writeLicenseKey` (admin authentication) |
+| Bind | Has the helper bind sockets to port 80 and pass them back. | `startWebService` (allowed for everyone) |
+
+## Building
+
+1. Open `EvenBetterAuthorizationSample.xcodeproj` in Xcode.
+2. Select your own team and signing identity for each target. The project is currently set to the
+   author's team (`LE7988HTRN`).
+3. Update the `SMAuthorizedClients` requirements in `HelperTool/HelperTool-Info.plist` so they match
+   your team and certificate. The helper only accepts clients that satisfy one of them.
+4. Build and run the `App` scheme (or `App-Sandboxed`).
+
+The helper is embedded in the app at `Contents/MacOS`, and the daemon plist at
+`Contents/Library/LaunchDaemons`. The `App-Sandboxed` app also embeds the XPC service in
+`Contents/XPCServices`.
+
+## Running
+
+1. Click **Install**. If the log shows an error and System Settings opens, enable the daemon under
+   *General → Login Items & Extensions*, then click **Install** again.
+2. Use **Get Version**, **Read License**, **Write License** and **Bind**. Results appear in the log.
+3. Optionally use the `Tool` command-line client (built with swift-argument-parser) for the same requests:
+
+   ```shell
+   Tool get-version
+   Tool read-license
+   Tool write-license            # stores a new random UUID
+   Tool write-license <uuid>     # stores the given UUID
+   ```
+
+   `write-license` needs administrator authentication, which may not be possible from a headless session.
+
+The helper logs to `/var/log/ebas-helper.log`.
+
+## Uninstalling
+
+Run `./Uninstall.sh`. It stops the daemon (`launchctl bootout`), removes the three authorization
+rights from the authorization database and deletes the stored license key. Then remove the app's
+entry under *System Settings → General → Login Items & Extensions*, or run `sudo sfltool resetbtm`
+to reset the whole background-items database.
 
 ## Credit
 
-Got some of this from this gist https://gist.github.com/xiao99xiao/0509091001bdd6259249
+Based on Apple's EvenBetterAuthorizationSample (© 2013 Apple Inc.); see the license text at the top of
+the files derived from it.

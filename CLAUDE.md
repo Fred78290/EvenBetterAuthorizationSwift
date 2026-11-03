@@ -16,13 +16,13 @@ daemon registered with `SMAppService` (not `SMJobBless`). See [README.md](README
 - `App-Sandboxed/XPCService/` — non-sandboxed XPC service the sandboxed app uses to reach the helper.
 - `AppShared/` — code used by both apps: `ContentView`, `AuthorizationModel` (button actions, `ConsoleLog`,
   `HelperToolConnector`), `AppDelegate`, `AboutCommands`.
-- `Tool/` — command-line client built with swift-argument-parser (`get-version`, `read-license`, `write-license [key]`).
+- `Tool/` — the `SampleTool` target (product `sampletool`), a command-line client built with swift-argument-parser (`get-version`, `read-license`, `write-license [key]`).
   Shares `Common/HelperToolProtocol.swift` with the other targets.
 
 ## Targets
 
-`App`, `App-Sandboxed`, `XPCService` (product `com.aldunelabs.caker.xpc.xpc`) and `Authorization` (the helper,
-product `com.aldunelabs.caker.authorization`, bundle id `com.aldunelabs.samplecode.authorization`), and `Tool`.
+`App`, `App-Sandboxed`, `XPCService` (product `wrapper.xpc`), `Authorization` (the helper, product `authorization`,
+bundle id `com.aldunelabs.samplecode.authorization`) and `SampleTool` (product `sampletool`, scheme `Tool`).
 The project file is edited by hand; new Swift files must be added to the right targets in
 `EvenBetterAuthorizationSample.xcodeproj/project.pbxproj` (no `xcodeproj` gem is installed).
 
@@ -44,6 +44,7 @@ real needs a signed build, and the user must approve the daemon in System Settin
   them breaks the app, XPC service, helper and the Tool unless all are updated together.
 - `Common.commandInfo` keys are selectors of `HelperToolProtocol`; adding a command means adding a right there and
   a `checkAuthorization(_:command:)` call in the helper.
+- `BundleProgram` in the embedded daemon plist must equal the helper's product name (`Contents/MacOS/authorization`).
 - The Mach service name `com.aldunelabs.samplecode.authorization` appears in `HelperToolProtocol.swift`,
   `HelperTool-Launchd.plist` and the embedded daemon plist.
 - `SMAuthorizedClients` in `HelperTool/HelperTool-Info.plist` must match the signing identity or the helper rejects

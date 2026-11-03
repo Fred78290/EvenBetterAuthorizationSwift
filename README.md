@@ -20,9 +20,9 @@ Parts of it (SMJobBless, the removed `SMJobBlessUtil.py` script, OS X 10.8) no l
 | --- | --- | --- | --- |
 | `App` | `EvenBetterAuthorizationSample.app` | `com.aldunelabs.samplecode` | Standard app; talks to the helper directly. |
 | `App-Sandboxed` | `EvenBetterAuthorizationSample-Sandboxed.app` | `com.aldunelabs.samplecode` | Sandboxed app; goes through the XPC service. |
-| `XPCService` | `com.aldunelabs.caker.xpc.xpc` | `com.aldunelabs.samplecode.xpc` | Non-sandboxed service that connects to the helper and holds the authorization for the sandboxed app. |
-| `Authorization` | `com.aldunelabs.caker.authorization` | `com.aldunelabs.samplecode.authorization` | The privileged helper tool (Mach service `com.aldunelabs.samplecode.authorization`). |
-| `Tool` | `Tool` | `com.aldunelabs.samplecode.tool` | Command-line client (swift-argument-parser) for get-version, read-license and write-license. |
+| `XPCService` | `wrapper.xpc` | `com.aldunelabs.samplecode.xpc` | Non-sandboxed service that connects to the helper and holds the authorization for the sandboxed app. |
+| `Authorization` | `authorization` | `com.aldunelabs.samplecode.authorization` | The privileged helper tool (Mach service `com.aldunelabs.samplecode.authorization`). |
+| `SampleTool` | `sampletool` | `com.aldunelabs.samplecode.tool` | Command-line client (swift-argument-parser) for get-version, read-license and write-license. Also embedded in the standard app at `Contents/MacOS/sampletool`. |
 
 ## Layout
 
@@ -33,7 +33,7 @@ App-Sandboxed/       sandboxed app entry point + SandboxedHelperToolConnector
 AppShared/           SwiftUI ContentView, AuthorizationModel, AppDelegate (used by both apps)
 Common/              HelperToolProtocol and authorization rights (shared with the helper)
 HelperTool/          helper tool, its Info.plist, launchd plist and the daemon plist embedded in the app
-Tool/                command-line client
+Tool/                command-line client (the `SampleTool` target)
 ```
 
 The window has five buttons and a log:
@@ -55,7 +55,7 @@ The window has five buttons and a log:
    your team and certificate. The helper only accepts clients that satisfy one of them.
 4. Build and run the `App` scheme (or `App-Sandboxed`).
 
-The helper is embedded in the app at `Contents/MacOS`, and the daemon plist at
+The helper (`authorization`) and `sampletool` are embedded in the app at `Contents/MacOS`, and the daemon plist at
 `Contents/Library/LaunchDaemons`. The `App-Sandboxed` app also embeds the XPC service in
 `Contents/XPCServices`.
 
@@ -64,13 +64,13 @@ The helper is embedded in the app at `Contents/MacOS`, and the daemon plist at
 1. Click **Install**. If the log shows an error and System Settings opens, enable the daemon under
    *General → Login Items & Extensions*, then click **Install** again.
 2. Use **Get Version**, **Read License**, **Write License** and **Bind**. Results appear in the log.
-3. Optionally use the `Tool` command-line client (built with swift-argument-parser) for the same requests:
+3. Optionally use the `sampletool` command-line client (built with swift-argument-parser) for the same requests:
 
    ```shell
-   Tool get-version
-   Tool read-license
-   Tool write-license            # stores a new random UUID
-   Tool write-license <uuid>     # stores the given UUID
+   sampletool get-version
+   sampletool read-license
+   sampletool write-license            # stores a new random UUID
+   sampletool write-license <uuid>     # stores the given UUID
    ```
 
    `write-license` needs administrator authentication, which may not be possible from a headless session.

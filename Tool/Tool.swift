@@ -13,7 +13,7 @@ import Security
 @main
 struct ToolCommand: ParsableCommand {
     static let configuration = CommandConfiguration(
-        commandName: "Tool",
+        commandName: "sampletool",
         abstract: "Talks to the EvenBetterAuthorization privileged helper tool.",
         subcommands: [GetVersion.self, ReadLicense.self, WriteLicense.self]
     )

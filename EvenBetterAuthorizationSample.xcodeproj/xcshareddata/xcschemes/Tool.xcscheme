@@ -16,7 +16,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9BC3C372309A026300F2425A"
-               BuildableName = "Tool"
+               BuildableName = "SampleTool"
+               BlueprintName = "SampleTool"
                ReferencedContainer = "container:EvenBetterAuthorizationSample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,7 +47,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9BC3C372309A026300F2425A"
-            BuildableName = "Tool"
+            BuildableName = "SampleTool"
+            BlueprintName = "SampleTool"
             ReferencedContainer = "container:EvenBetterAuthorizationSample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,7 +64,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9BC3C372309A026300F2425A"
-            BuildableName = "Tool"
+            BuildableName = "SampleTool"
+            BlueprintName = "SampleTool"
             ReferencedContainer = "container:EvenBetterAuthorizationSample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

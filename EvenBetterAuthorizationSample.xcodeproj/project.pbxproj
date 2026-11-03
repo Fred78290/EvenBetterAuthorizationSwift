@@ -7,30 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9BC3C3683099EE3700F2425A /* com.aldunelabs.caker.authorization in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4CD036715E7A2C300FDC22C /* com.aldunelabs.caker.authorization */; };
+		9B5256ED309A2AF800DEDBEE /* sampletool in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9BC3C373309A026300F2425A /* sampletool */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		9BC3C3683099EE3700F2425A /* authorization in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4CD036715E7A2C300FDC22C /* authorization */; };
 		9BC3C36B3099F38600F2425A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BC3C3693099F38600F2425A /* Assets.xcassets */; };
 		9BC3C36C3099F38600F2425A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BC3C3693099F38600F2425A /* Assets.xcassets */; };
 		9BC3C37C309A02B600F2425A /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC3C37A309A02B600F2425A /* Tool.swift */; };
 		A1B2C3D400000000000000A1 /* com.aldunelabs.samplecode.authorization.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000A2 /* com.aldunelabs.samplecode.authorization.plist */; };
 		B1B2C3D400000000000000B1 /* com.aldunelabs.samplecode.authorization.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000A2 /* com.aldunelabs.samplecode.authorization.plist */; };
-		B1B2C3D400000000000000B2 /* com.aldunelabs.caker.authorization in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4CD036715E7A2C300FDC22C /* com.aldunelabs.caker.authorization */; };
+		B1B2C3D400000000000000B2 /* authorization in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4CD036715E7A2C300FDC22C /* authorization */; };
 		B1B2C3D400000000000000B3 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F715E7D4D4007554D3 /* ServiceManagement.framework */; };
-		E4AD7A881608DB4A00F594A2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4ED7B8315E79B83002AD912 /* Cocoa.framework */; };
-		E4AD7AAB1608DCFC00F594A2 /* com.aldunelabs.caker.xpc.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4C32DCB16023A97002AFAB3 /* com.aldunelabs.caker.xpc.xpc */; };
-		E4AD7AB71609093B00F594A2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4AD7AB91609093B00F594A2 /* InfoPlist.strings */; };
-		E4AD7AC416090AC700F594A2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F915E7D4D8007554D3 /* Security.framework */; };
-		E4C32DCC16023A97002AFAB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372FB15E7D4FE007554D3 /* Foundation.framework */; };
-		E4C32DE516024494002AFAB3 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F715E7D4D4007554D3 /* ServiceManagement.framework */; };
-		E4C32DE616024498002AFAB3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F915E7D4D8007554D3 /* Security.framework */; };
-		E4C32DEA16024D51002AFAB3 /* com.aldunelabs.caker.authorization in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4CD036715E7A2C300FDC22C /* com.aldunelabs.caker.authorization */; };
-		E4C372F815E7D4D4007554D3 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F715E7D4D4007554D3 /* ServiceManagement.framework */; };
-		E4C372FA15E7D4D8007554D3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F915E7D4D8007554D3 /* Security.framework */; };
-		E4C372FC15E7D4FE007554D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372FB15E7D4FE007554D3 /* Foundation.framework */; };
-		E4C776011603A68300C72EC0 /* Common.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4CBCCF215EBC55F0081DF5C /* Common.strings */; };
-		E4CBCCE315EBA7000081DF5C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F915E7D4D8007554D3 /* Security.framework */; };
-		E4CBCCF015EBC55F0081DF5C /* Common.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4CBCCF215EBC55F0081DF5C /* Common.strings */; };
-		E4CBCD2A15EC191D0081DF5C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4CBCD2C15EC191D0081DF5C /* InfoPlist.strings */; };
-		E4ED7B8415E79B83002AD912 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4ED7B8315E79B83002AD912 /* Cocoa.framework */; };
 		C0DE5A000000000000000102 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE5A000000000000000101 /* Common.swift */; };
 		C0DE5A000000000000000103 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE5A000000000000000101 /* Common.swift */; };
 		C0DE5A000000000000000104 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE5A000000000000000101 /* Common.swift */; };
@@ -58,6 +43,22 @@
 		C0DE5A0000000000000001A2 /* AboutCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE5A0000000000000001A0 /* AboutCommands.swift */; };
 		C0DE5A0000000000000001B0 /* HelperToolProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE5A000000000000000105 /* HelperToolProtocol.swift */; };
 		C0DE5A0000000000000001B1 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = C0DE5A0000000000000001B3 /* ArgumentParser */; };
+		E4AD7A881608DB4A00F594A2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4ED7B8315E79B83002AD912 /* Cocoa.framework */; };
+		E4AD7AAB1608DCFC00F594A2 /* wrapper.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4C32DCB16023A97002AFAB3 /* wrapper.xpc */; };
+		E4AD7AB71609093B00F594A2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4AD7AB91609093B00F594A2 /* InfoPlist.strings */; };
+		E4AD7AC416090AC700F594A2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F915E7D4D8007554D3 /* Security.framework */; };
+		E4C32DCC16023A97002AFAB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372FB15E7D4FE007554D3 /* Foundation.framework */; };
+		E4C32DE516024494002AFAB3 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F715E7D4D4007554D3 /* ServiceManagement.framework */; };
+		E4C32DE616024498002AFAB3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F915E7D4D8007554D3 /* Security.framework */; };
+		E4C32DEA16024D51002AFAB3 /* authorization in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4CD036715E7A2C300FDC22C /* authorization */; };
+		E4C372F815E7D4D4007554D3 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F715E7D4D4007554D3 /* ServiceManagement.framework */; };
+		E4C372FA15E7D4D8007554D3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F915E7D4D8007554D3 /* Security.framework */; };
+		E4C372FC15E7D4FE007554D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372FB15E7D4FE007554D3 /* Foundation.framework */; };
+		E4C776011603A68300C72EC0 /* Common.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4CBCCF215EBC55F0081DF5C /* Common.strings */; };
+		E4CBCCE315EBA7000081DF5C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F915E7D4D8007554D3 /* Security.framework */; };
+		E4CBCCF015EBC55F0081DF5C /* Common.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4CBCCF215EBC55F0081DF5C /* Common.strings */; };
+		E4CBCD2A15EC191D0081DF5C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4CBCD2C15EC191D0081DF5C /* InfoPlist.strings */; };
+		E4ED7B8415E79B83002AD912 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4ED7B8315E79B83002AD912 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,7 +114,7 @@
 			dstPath = Contents/MacOS;
 			dstSubfolder = Wrapper;
 			files = (
-				B1B2C3D400000000000000B2 /* com.aldunelabs.caker.authorization in CopyFiles */,
+				B1B2C3D400000000000000B2 /* authorization in CopyFiles */,
 			);
 		};
 		B1B2C3D400000000000000B7 /* CopyFiles */ = {
@@ -129,7 +130,7 @@
 			dstPath = Contents/XPCServices;
 			dstSubfolder = Wrapper;
 			files = (
-				E4AD7AAB1608DCFC00F594A2 /* com.aldunelabs.caker.xpc.xpc in CopyFiles */,
+				E4AD7AAB1608DCFC00F594A2 /* wrapper.xpc in CopyFiles */,
 			);
 		};
 		E4C32DDB16023B43002AFAB3 /* CopyFiles */ = {
@@ -137,7 +138,8 @@
 			dstPath = Contents/MacOS;
 			dstSubfolder = Wrapper;
 			files = (
-				9BC3C3683099EE3700F2425A /* com.aldunelabs.caker.authorization in CopyFiles */,
+				9B5256ED309A2AF800DEDBEE /* sampletool in CopyFiles */,
+				9BC3C3683099EE3700F2425A /* authorization in CopyFiles */,
 			);
 		};
 		E4C32DE916024D48002AFAB3 /* CopyFiles */ = {
@@ -145,39 +147,17 @@
 			dstPath = Contents/Library/LaunchServices;
 			dstSubfolder = Wrapper;
 			files = (
-				E4C32DEA16024D51002AFAB3 /* com.aldunelabs.caker.authorization in CopyFiles */,
+				E4C32DEA16024D51002AFAB3 /* authorization in CopyFiles */,
 			);
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9BC3C3693099F38600F2425A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9BC3C373309A026300F2425A /* Tool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Tool; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BC3C373309A026300F2425A /* sampletool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sampletool; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC3C37A309A02B600F2425A /* Tool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
 		9BC3C37D309A02DE00F2425A /* tool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = tool.entitlements; sourceTree = "<group>"; };
 		A1B2C3D400000000000000A2 /* com.aldunelabs.samplecode.authorization.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = com.aldunelabs.samplecode.authorization.plist; sourceTree = "<group>"; };
-		DA70FCE81884E92A009FE52A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		E40FA42717ABE62100F6CB03 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E40FA42817ABE62200F6CB03 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E40FA42917ABE62300F6CB03 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Common.strings; sourceTree = "<group>"; };
-		E456726C15E7E4B80050ECAB /* Uninstall.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = Uninstall.sh; sourceTree = "<group>"; };
-		E4AD7A861608DB4A00F594A2 /* EvenBetterAuthorizationSample-Sandboxed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EvenBetterAuthorizationSample-Sandboxed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4AD7A8A1608DB4A00F594A2 /* App-Sandboxed-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "App-Sandboxed-Info.plist"; sourceTree = "<group>"; };
-		E4AD7A9F1608DBEC00F594A2 /* XPCService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "XPCService-Info.plist"; sourceTree = "<group>"; };
-		E4AD7AB81609093B00F594A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E4C32DC516023990002AFAB3 /* App-Sandboxed.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "App-Sandboxed.entitlements"; sourceTree = "<group>"; };
-		E4C32DCB16023A97002AFAB3 /* com.aldunelabs.caker.xpc.xpc */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = com.aldunelabs.caker.xpc.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4C372E315E7CC10007554D3 /* HelperTool-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelperTool-Info.plist"; sourceTree = "<group>"; };
-		E4C372E415E7CC10007554D3 /* HelperTool-Launchd.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelperTool-Launchd.plist"; sourceTree = "<group>"; };
-		E4C372F715E7D4D4007554D3 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
-		E4C372F915E7D4D8007554D3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		E4C372FB15E7D4FE007554D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		E4CBCCF115EBC55F0081DF5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Common.strings; sourceTree = "<group>"; };
-		E4CBCD2B15EC191D0081DF5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E4CD036715E7A2C300FDC22C /* com.aldunelabs.caker.authorization */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com.aldunelabs.caker.authorization; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4ED7B7F15E79B83002AD912 /* EvenBetterAuthorizationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EvenBetterAuthorizationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4ED7B8315E79B83002AD912 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		E4ED7B8615E79B83002AD912 /* App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "App-Info.plist"; sourceTree = "<group>"; };
 		C0DE5A000000000000000101 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		C0DE5A000000000000000105 /* HelperToolProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperToolProtocol.swift; sourceTree = "<group>"; };
 		C0DE5A00000000000000010A /* HelperTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperTool.swift; sourceTree = "<group>"; };
@@ -193,6 +173,28 @@
 		C0DE5A000000000000000122 /* SandboxedHelperToolConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandboxedHelperToolConnector.swift; sourceTree = "<group>"; };
 		C0DE5A000000000000000124 /* EvenBetterAuthorizationSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvenBetterAuthorizationSampleApp.swift; sourceTree = "<group>"; };
 		C0DE5A0000000000000001A0 /* AboutCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCommands.swift; sourceTree = "<group>"; };
+		DA70FCE81884E92A009FE52A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		E40FA42717ABE62100F6CB03 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E40FA42817ABE62200F6CB03 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E40FA42917ABE62300F6CB03 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Common.strings; sourceTree = "<group>"; };
+		E456726C15E7E4B80050ECAB /* Uninstall.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = Uninstall.sh; sourceTree = "<group>"; };
+		E4AD7A861608DB4A00F594A2 /* EvenBetterAuthorizationSample-Sandboxed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EvenBetterAuthorizationSample-Sandboxed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4AD7A8A1608DB4A00F594A2 /* App-Sandboxed-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "App-Sandboxed-Info.plist"; sourceTree = "<group>"; };
+		E4AD7A9F1608DBEC00F594A2 /* XPCService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "XPCService-Info.plist"; sourceTree = "<group>"; };
+		E4AD7AB81609093B00F594A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E4C32DC516023990002AFAB3 /* App-Sandboxed.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "App-Sandboxed.entitlements"; sourceTree = "<group>"; };
+		E4C32DCB16023A97002AFAB3 /* wrapper.xpc */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wrapper.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4C372E315E7CC10007554D3 /* HelperTool-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelperTool-Info.plist"; sourceTree = "<group>"; };
+		E4C372E415E7CC10007554D3 /* HelperTool-Launchd.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelperTool-Launchd.plist"; sourceTree = "<group>"; };
+		E4C372F715E7D4D4007554D3 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		E4C372F915E7D4D8007554D3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E4C372FB15E7D4FE007554D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E4CBCCF115EBC55F0081DF5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Common.strings; sourceTree = "<group>"; };
+		E4CBCD2B15EC191D0081DF5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E4CD036715E7A2C300FDC22C /* authorization */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = authorization; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4ED7B7F15E79B83002AD912 /* EvenBetterAuthorizationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EvenBetterAuthorizationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4ED7B8315E79B83002AD912 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		E4ED7B8615E79B83002AD912 /* App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "App-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +253,17 @@
 				9BC3C37D309A02DE00F2425A /* tool.entitlements */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		C0DE5A0000000000000000F0 /* AppShared */ = {
+			isa = PBXGroup;
+			children = (
+				C0DE5A0000000000000001A0 /* AboutCommands.swift */,
+				C0DE5A000000000000000115 /* AppDelegate.swift */,
+				C0DE5A000000000000000118 /* AuthorizationModel.swift */,
+				C0DE5A00000000000000011B /* ContentView.swift */,
+			);
+			path = AppShared;
 			sourceTree = "<group>";
 		};
 		E4AD7A891608DB4A00F594A2 /* App-Sandboxed */ = {
@@ -320,10 +333,10 @@
 			isa = PBXGroup;
 			children = (
 				E4ED7B7F15E79B83002AD912 /* EvenBetterAuthorizationSample.app */,
-				E4CD036715E7A2C300FDC22C /* com.aldunelabs.caker.authorization */,
-				E4C32DCB16023A97002AFAB3 /* com.aldunelabs.caker.xpc.xpc */,
+				E4CD036715E7A2C300FDC22C /* authorization */,
+				E4C32DCB16023A97002AFAB3 /* wrapper.xpc */,
 				E4AD7A861608DB4A00F594A2 /* EvenBetterAuthorizationSample-Sandboxed.app */,
-				9BC3C373309A026300F2425A /* Tool */,
+				9BC3C373309A026300F2425A /* sampletool */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -350,23 +363,12 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		C0DE5A0000000000000000F0 /* AppShared */ = {
-			isa = PBXGroup;
-			children = (
-				C0DE5A0000000000000001A0 /* AboutCommands.swift */,
-				C0DE5A000000000000000115 /* AppDelegate.swift */,
-				C0DE5A000000000000000118 /* AuthorizationModel.swift */,
-				C0DE5A00000000000000011B /* ContentView.swift */,
-			);
-			path = AppShared;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9BC3C372309A026300F2425A /* Tool */ = {
+		9BC3C372309A026300F2425A /* SampleTool */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9BC3C379309A026300F2425A /* Build configuration list for PBXNativeTarget "Tool" */;
+			buildConfigurationList = 9BC3C379309A026300F2425A /* Build configuration list for PBXNativeTarget "SampleTool" */;
 			buildPhases = (
 				9BC3C36F309A026300F2425A /* Sources */,
 				9BC3C370309A026300F2425A /* Frameworks */,
@@ -374,12 +376,12 @@
 			);
 			buildRules = (
 			);
-			name = Tool;
+			name = SampleTool;
 			packageProductDependencies = (
 				C0DE5A0000000000000001B3 /* ArgumentParser */,
 			);
 			productName = Tool;
-			productReference = 9BC3C373309A026300F2425A /* Tool */;
+			productReference = 9BC3C373309A026300F2425A /* sampletool */;
 			productType = "com.apple.product-type.tool";
 		};
 		E4AD7A851608DB4A00F594A2 /* App-Sandboxed */ = {
@@ -420,7 +422,7 @@
 			);
 			name = XPCService;
 			productName = XPCService;
-			productReference = E4C32DCB16023A97002AFAB3 /* com.aldunelabs.caker.xpc.xpc */;
+			productReference = E4C32DCB16023A97002AFAB3 /* wrapper.xpc */;
 			productType = "com.apple.product-type.bundle";
 		};
 		E4CD036615E7A2C300FDC22C /* Authorization */ = {
@@ -434,7 +436,7 @@
 			);
 			name = Authorization;
 			productName = HelperTool;
-			productReference = E4CD036715E7A2C300FDC22C /* com.aldunelabs.caker.authorization */;
+			productReference = E4CD036715E7A2C300FDC22C /* authorization */;
 			productType = "com.apple.product-type.tool";
 		};
 		E4ED7B7E15E79B83002AD912 /* App */ = {
@@ -501,7 +503,7 @@
 				E4AD7A851608DB4A00F594A2 /* App-Sandboxed */,
 				E4C32DCA16023A97002AFAB3 /* XPCService */,
 				E4CD036615E7A2C300FDC22C /* Authorization */,
-				9BC3C372309A026300F2425A /* Tool */,
+				9BC3C372309A026300F2425A /* SampleTool */,
 			);
 		};
 /* End PBXProject section */
@@ -639,7 +641,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		9BC3C377309A026300F2425A /* Debug configuration for PBXNativeTarget "Tool" */ = {
+		9BC3C377309A026300F2425A /* Debug configuration for PBXNativeTarget "SampleTool" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -682,14 +684,16 @@
 				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_KEY_CFBundleDisplayName = sampletool;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 27.2;
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.aldunelabs.samplecode.tool;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = sampletool;
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -698,7 +702,7 @@
 			};
 			name = Debug;
 		};
-		9BC3C378309A026300F2425A /* Release configuration for PBXNativeTarget "Tool" */ = {
+		9BC3C378309A026300F2425A /* Release configuration for PBXNativeTarget "SampleTool" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -736,13 +740,15 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_KEY_CFBundleDisplayName = sampletool;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 27.2;
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.aldunelabs.samplecode.tool;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = sampletool;
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
@@ -753,7 +759,6 @@
 		E4AD7A921608DB4A00F594A2 /* Debug configuration for PBXNativeTarget "App-Sandboxed" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				SWIFT_VERSION = 5.0;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "App-Sandboxed/App-Sandboxed.entitlements";
@@ -764,11 +769,14 @@
 				INFOPLIST_FILE = "App-Sandboxed/App-Sandboxed-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = EvenBetterAuthorization;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.aldunelabs.samplecode;
 				PRODUCT_NAME = "EvenBetterAuthorizationSample-Sandboxed";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				RUN_CLANG_STATIC_ANALYZER = YES;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -776,7 +784,6 @@
 		E4AD7A931608DB4A00F594A2 /* Release configuration for PBXNativeTarget "App-Sandboxed" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				SWIFT_VERSION = 5.0;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "App-Sandboxed/App-Sandboxed.entitlements";
@@ -787,11 +794,14 @@
 				INFOPLIST_FILE = "App-Sandboxed/App-Sandboxed-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = EvenBetterAuthorization;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.aldunelabs.samplecode;
 				PRODUCT_NAME = "EvenBetterAuthorizationSample-Sandboxed";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				RUN_CLANG_STATIC_ANALYZER = YES;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -799,7 +809,6 @@
 		E4C32DD716023A97002AFAB3 /* Debug configuration for PBXNativeTarget "XPCService" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				SWIFT_VERSION = 5.0;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
@@ -807,10 +816,13 @@
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = LE7988HTRN;
 				INFOPLIST_FILE = "App-Sandboxed/XPCService/XPCService-Info.plist";
 				MACH_O_TYPE = mh_execute;
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.aldunelabs.samplecode.xpc;
-				PRODUCT_NAME = com.aldunelabs.caker.xpc;
+				PRODUCT_NAME = wrapper;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = xpc;
 			};
 			name = Debug;
@@ -818,7 +830,6 @@
 		E4C32DD816023A97002AFAB3 /* Release configuration for PBXNativeTarget "XPCService" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				SWIFT_VERSION = 5.0;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
@@ -826,10 +837,13 @@
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = LE7988HTRN;
 				INFOPLIST_FILE = "App-Sandboxed/XPCService/XPCService-Info.plist";
 				MACH_O_TYPE = mh_execute;
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.aldunelabs.samplecode.xpc;
-				PRODUCT_NAME = com.aldunelabs.caker.xpc;
+				PRODUCT_NAME = wrapper;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = xpc;
 			};
 			name = Release;
@@ -837,13 +851,13 @@
 		E4CD036F15E7A2C300FDC22C /* Debug configuration for PBXNativeTarget "Authorization" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				SWIFT_VERSION = 5.0;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = LE7988HTRN;
 				INFOPLIST_FILE = "HelperTool/HelperTool-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
 				OTHER_LDFLAGS = (
 					"-sectcreate",
 					__TEXT,
@@ -855,23 +869,24 @@
 					"HelperTool/HelperTool-Launchd.plist",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.aldunelabs.samplecode.authorization;
-				PRODUCT_NAME = com.aldunelabs.caker.authorization;
+				PRODUCT_NAME = authorization;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		E4CD037015E7A2C300FDC22C /* Release configuration for PBXNativeTarget "Authorization" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				SWIFT_VERSION = 5.0;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = LE7988HTRN;
 				INFOPLIST_FILE = "HelperTool/HelperTool-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
 				OTHER_LDFLAGS = (
 					"-sectcreate",
 					__TEXT,
@@ -883,10 +898,11 @@
 					"HelperTool/HelperTool-Launchd.plist",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.aldunelabs.samplecode.authorization;
-				PRODUCT_NAME = com.aldunelabs.caker.authorization;
+				PRODUCT_NAME = authorization;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -985,7 +1001,6 @@
 		E4ED7B9115E79B83002AD912 /* Debug configuration for PBXNativeTarget "App" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				SWIFT_VERSION = 5.0;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
@@ -996,11 +1011,14 @@
 				INFOPLIST_FILE = "App/App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = EvenBetterAuthorization;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.aldunelabs.samplecode;
 				PRODUCT_NAME = EvenBetterAuthorizationSample;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "Sample Code App";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1008,7 +1026,6 @@
 		E4ED7B9215E79B83002AD912 /* Release configuration for PBXNativeTarget "App" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				SWIFT_VERSION = 5.0;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
@@ -1019,11 +1036,14 @@
 				INFOPLIST_FILE = "App/App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = EvenBetterAuthorization;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.aldunelabs.samplecode;
 				PRODUCT_NAME = EvenBetterAuthorizationSample;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "Sample Code App";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -1031,11 +1051,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9BC3C379309A026300F2425A /* Build configuration list for PBXNativeTarget "Tool" */ = {
+		9BC3C379309A026300F2425A /* Build configuration list for PBXNativeTarget "SampleTool" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9BC3C377309A026300F2425A /* Debug configuration for PBXNativeTarget "Tool" */,
-				9BC3C378309A026300F2425A /* Release configuration for PBXNativeTarget "Tool" */,
+				9BC3C377309A026300F2425A /* Debug configuration for PBXNativeTarget "SampleTool" */,
+				9BC3C378309A026300F2425A /* Release configuration for PBXNativeTarget "SampleTool" */,
 			);
 			defaultConfigurationName = Release;
 		};

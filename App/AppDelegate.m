@@ -197,26 +197,26 @@
 #pragma mark * IB Actions
 
 - (IBAction)installAction:(id)sender
-    // Called when the user clicks the Install button.  This uses SMJobBless to install 
-    // the helper tool.
+    // Called when the user clicks the Install button.  This uses SMAppService (which replaces the deprecated SMJobBless)
+    // to register the launch daemon whose plist is embedded in the app's
+    // Contents/Library/LaunchDaemons directory.
 {
     #pragma unused(sender)
 
-    Boolean             success;
-    CFErrorRef          error;
-    
-    success = SMJobBless(
-        kSMDomainSystemLaunchd,
-        CFSTR("com.example.apple-samplecode.EBAS.HelperTool"),
-        self->_authRef,
-        &error
-    );
+    SMAppService *      service;
+    NSError *           error;
 
-    if (success) {
+    service = [SMAppService daemonServiceWithPlistName:@"com.aldunelabs.samplecode.authorization.plist"];
+
+    error = nil;
+    if ([service registerAndReturnError:&error]) {
         [self logWithFormat:@"success\n"];
     } else {
-        [self logError:(__bridge NSError *) error];
-        CFRelease(error);
+        [self logError:error];
+        if (service.status == SMAppServiceStatusRequiresApproval) {
+            // The user must approve the daemon in System Settings > General > Login Items.
+            [SMAppService openSystemSettingsLoginItems];
+        }
     }
 }
 

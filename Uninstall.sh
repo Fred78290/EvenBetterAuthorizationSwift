@@ -7,12 +7,12 @@
 # This uninstalls everything installed by the sample.  It's useful when testing to ensure that 
 # you start from scratch.
 
-sudo launchctl unload /Library/LaunchDaemons/com.example.apple-samplecode.EBAS.HelperTool.plist
-sudo rm /Library/LaunchDaemons/com.example.apple-samplecode.EBAS.HelperTool.plist
-sudo rm /Library/PrivilegedHelperTools/com.example.apple-samplecode.EBAS.HelperTool
+sudo launchctl unload /Library/LaunchDaemons/com.aldunelabs.com.authorization.plist
+sudo rm /Library/LaunchDaemons/com.aldunelabs.com.authorization.plist
+sudo rm /Library/PrivilegedHelperTools/com.aldunelabs.com.authorization
 
-sudo security -q authorizationdb remove "com.example.apple-samplecode.EBAS.readLicenseKey"
-sudo security -q authorizationdb remove "com.example.apple-samplecode.EBAS.writeLicenseKey"
-sudo security -q authorizationdb remove "com.example.apple-samplecode.EBAS.startWebService"
+sudo security -q authorizationdb remove "com.aldunelabs.samplecode.authorization.readLicenseKey"
+sudo security -q authorizationdb remove "com.aldunelabs.samplecode.authorization.writeLicenseKey"
+sudo security -q authorizationdb remove "com.aldunelabs.samplecode.authorization.startWebService"
 
-sudo defaults delete com.example.apple-samplecode.EBAS.HelperTool licenseKey
+sudo defaults delete com.aldunelabs.com.authorization licenseKey

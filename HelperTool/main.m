@@ -56,7 +56,7 @@ int main(int argc, char **argv)
 
     // We just create and start an instance of the main helper tool object and then 
     // have it run the run loop forever.
-    
+    NSLog(@"Starting EBAS helper tool...");
     @autoreleasepool {
         HelperTool *  m;
         

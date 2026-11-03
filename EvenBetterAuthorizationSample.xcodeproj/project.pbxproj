@@ -3,15 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 110;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9BC3C3683099EE3700F2425A /* com.aldunelabs.caker.authorization in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4CD036715E7A2C300FDC22C /* com.aldunelabs.caker.authorization */; };
+		9BC3C36B3099F38600F2425A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BC3C3693099F38600F2425A /* Assets.xcassets */; };
+		9BC3C36C3099F38600F2425A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BC3C3693099F38600F2425A /* Assets.xcassets */; };
+		9BC3C37C309A02B600F2425A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC3C37A309A02B600F2425A /* main.swift */; };
+		A1B2C3D400000000000000A1 /* com.aldunelabs.samplecode.authorization.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000A2 /* com.aldunelabs.samplecode.authorization.plist */; };
+		B1B2C3D400000000000000B1 /* com.aldunelabs.samplecode.authorization.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000A2 /* com.aldunelabs.samplecode.authorization.plist */; };
+		B1B2C3D400000000000000B2 /* com.aldunelabs.caker.authorization in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4CD036715E7A2C300FDC22C /* com.aldunelabs.caker.authorization */; };
+		B1B2C3D400000000000000B3 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F715E7D4D4007554D3 /* ServiceManagement.framework */; };
 		E4AD7A881608DB4A00F594A2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4ED7B8315E79B83002AD912 /* Cocoa.framework */; };
 		E4AD7A8F1608DB4A00F594A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AD7A8E1608DB4A00F594A2 /* AppDelegate.m */; };
 		E4AD7A911608DB4A00F594A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AD7A901608DB4A00F594A2 /* main.m */; };
-		E4AD7AA91608DC4C00F594A2 /* com.example.apple-samplecode.EBAS.HelperTool in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4CD036715E7A2C300FDC22C /* com.example.apple-samplecode.EBAS.HelperTool */; };
-		E4AD7AAB1608DCFC00F594A2 /* com.example.apple-samplecode.EBAS.XPCService.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4C32DCB16023A97002AFAB3 /* com.example.apple-samplecode.EBAS.XPCService.xpc */; };
+		E4AD7AAB1608DCFC00F594A2 /* com.aldunelabs.caker.xpc.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4C32DCB16023A97002AFAB3 /* com.aldunelabs.caker.xpc.xpc */; };
 		E4AD7AAC1608DD8000F594A2 /* MainMenu-Sandboxed.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4AD7AAE1608DD8000F594A2 /* MainMenu-Sandboxed.xib */; };
 		E4AD7AB71609093B00F594A2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4AD7AB91609093B00F594A2 /* InfoPlist.strings */; };
 		E4AD7AC216090A3300F594A2 /* XPCService.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AD7AA11608DBEC00F594A2 /* XPCService.m */; };
@@ -20,7 +27,7 @@
 		E4C32DCC16023A97002AFAB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372FB15E7D4FE007554D3 /* Foundation.framework */; };
 		E4C32DE516024494002AFAB3 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F715E7D4D4007554D3 /* ServiceManagement.framework */; };
 		E4C32DE616024498002AFAB3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F915E7D4D8007554D3 /* Security.framework */; };
-		E4C32DEA16024D51002AFAB3 /* com.example.apple-samplecode.EBAS.HelperTool in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4CD036715E7A2C300FDC22C /* com.example.apple-samplecode.EBAS.HelperTool */; };
+		E4C32DEA16024D51002AFAB3 /* com.aldunelabs.caker.authorization in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4CD036715E7A2C300FDC22C /* com.aldunelabs.caker.authorization */; };
 		E4C32E781603536C002AFAB3 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CBCCEB15EBBB8D0081DF5C /* Common.m */; };
 		E4C372F815E7D4D4007554D3 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F715E7D4D4007554D3 /* ServiceManagement.framework */; };
 		E4C372FA15E7D4D8007554D3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F915E7D4D8007554D3 /* Security.framework */; };
@@ -40,6 +47,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B1B2C3D400000000000000B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4ED7B7615E79B83002AD912 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4CD036615E7A2C300FDC22C;
+			remoteInfo = Authorization;
+		};
 		E4AD7AA51608DC2D00F594A2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E4ED7B7615E79B83002AD912 /* Project object */;
@@ -64,39 +78,70 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		9BC3C371309A026300F2425A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolder = None;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		A1B2C3D400000000000000A3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = Contents/Library/LaunchDaemons;
+			dstSubfolder = Wrapper;
+			files = (
+				A1B2C3D400000000000000A1 /* com.aldunelabs.samplecode.authorization.plist in CopyFiles */,
+			);
+		};
+		B1B2C3D400000000000000B6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = Contents/MacOS;
+			dstSubfolder = Wrapper;
+			files = (
+				B1B2C3D400000000000000B2 /* com.aldunelabs.caker.authorization in CopyFiles */,
+			);
+		};
+		B1B2C3D400000000000000B7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = Contents/Library/LaunchDaemons;
+			dstSubfolder = Wrapper;
+			files = (
+				B1B2C3D400000000000000B1 /* com.aldunelabs.samplecode.authorization.plist in CopyFiles */,
+			);
+		};
 		E4AD7AAA1608DC5F00F594A2 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
 			dstPath = Contents/XPCServices;
-			dstSubfolderSpec = 1;
+			dstSubfolder = Wrapper;
 			files = (
-				E4AD7AAB1608DCFC00F594A2 /* com.example.apple-samplecode.EBAS.XPCService.xpc in CopyFiles */,
+				E4AD7AAB1608DCFC00F594A2 /* com.aldunelabs.caker.xpc.xpc in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E4C32DDB16023B43002AFAB3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = Contents/Library/LaunchServices;
-			dstSubfolderSpec = 1;
+			dstPath = Contents/MacOS;
+			dstSubfolder = Wrapper;
 			files = (
-				E4AD7AA91608DC4C00F594A2 /* com.example.apple-samplecode.EBAS.HelperTool in CopyFiles */,
+				9BC3C3683099EE3700F2425A /* com.aldunelabs.caker.authorization in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E4C32DE916024D48002AFAB3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
 			dstPath = Contents/Library/LaunchServices;
-			dstSubfolderSpec = 1;
+			dstSubfolder = Wrapper;
 			files = (
-				E4C32DEA16024D51002AFAB3 /* com.example.apple-samplecode.EBAS.HelperTool in CopyFiles */,
+				E4C32DEA16024D51002AFAB3 /* com.aldunelabs.caker.authorization in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9BC3C3693099F38600F2425A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9BC3C373309A026300F2425A /* Tool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Tool; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BC3C37A309A02B600F2425A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9BC3C37D309A02DE00F2425A /* tool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = tool.entitlements; sourceTree = "<group>"; };
+		A1B2C3D400000000000000A2 /* com.aldunelabs.samplecode.authorization.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = com.aldunelabs.samplecode.authorization.plist; sourceTree = "<group>"; };
 		DA70FCE71884E921009FE52A /* SMJobBlessUtil.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = SMJobBlessUtil.py; sourceTree = "<group>"; };
 		DA70FCE81884E92A009FE52A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		E40FA42017ABE51300F6CB03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "Base.lproj/MainMenu-Sandboxed.xib"; sourceTree = "<group>"; };
@@ -120,7 +165,7 @@
 		E4AD7AA11608DBEC00F594A2 /* XPCService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPCService.m; sourceTree = "<group>"; };
 		E4AD7AB81609093B00F594A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E4C32DC516023990002AFAB3 /* App-Sandboxed.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "App-Sandboxed.entitlements"; sourceTree = "<group>"; };
-		E4C32DCB16023A97002AFAB3 /* com.example.apple-samplecode.EBAS.XPCService.xpc */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "com.example.apple-samplecode.EBAS.XPCService.xpc"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4C32DCB16023A97002AFAB3 /* com.aldunelabs.caker.xpc.xpc */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = com.aldunelabs.caker.xpc.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4C372E315E7CC10007554D3 /* HelperTool-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelperTool-Info.plist"; sourceTree = "<group>"; };
 		E4C372E415E7CC10007554D3 /* HelperTool-Launchd.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelperTool-Launchd.plist"; sourceTree = "<group>"; };
 		E4C372F715E7D4D4007554D3 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
@@ -132,7 +177,7 @@
 		E4CBCCEB15EBBB8D0081DF5C /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
 		E4CBCCF115EBC55F0081DF5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Common.strings; sourceTree = "<group>"; };
 		E4CBCD2B15EC191D0081DF5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E4CD036715E7A2C300FDC22C /* com.example.apple-samplecode.EBAS.HelperTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "com.example.apple-samplecode.EBAS.HelperTool"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4CD036715E7A2C300FDC22C /* com.aldunelabs.caker.authorization */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com.aldunelabs.caker.authorization; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4CD036C15E7A2C300FDC22C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E4ED7B7F15E79B83002AD912 /* EvenBetterAuthorizationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EvenBetterAuthorizationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4ED7B8315E79B83002AD912 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -143,47 +188,62 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9BC3C370309A026300F2425A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
 		E4AD7A831608DB4A00F594A2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				E4AD7A881608DB4A00F594A2 /* Cocoa.framework in Frameworks */,
 				E4AD7AC416090AC700F594A2 /* Security.framework in Frameworks */,
+				B1B2C3D400000000000000B3 /* ServiceManagement.framework in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E4C32DC816023A97002AFAB3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				E4C32DCC16023A97002AFAB3 /* Foundation.framework in Frameworks */,
 				E4C32DE516024494002AFAB3 /* ServiceManagement.framework in Frameworks */,
 				E4C32DE616024498002AFAB3 /* Security.framework in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E4CD036515E7A2C300FDC22C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				E4C372FC15E7D4FE007554D3 /* Foundation.framework in Frameworks */,
 				E4CBCCE315EBA7000081DF5C /* Security.framework in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E4ED7B7C15E79B83002AD912 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				E4ED7B8415E79B83002AD912 /* Cocoa.framework in Frameworks */,
 				E4C372F815E7D4D4007554D3 /* ServiceManagement.framework in Frameworks */,
 				E4C372FA15E7D4D8007554D3 /* Security.framework in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9BC3C36A3099F38600F2425A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9BC3C3693099F38600F2425A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9BC3C37B309A02B600F2425A /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				9BC3C37A309A02B600F2425A /* main.swift */,
+				9BC3C37D309A02DE00F2425A /* tool.entitlements */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 		E4AD7A891608DB4A00F594A2 /* App-Sandboxed */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +285,7 @@
 			children = (
 				E4C372E315E7CC10007554D3 /* HelperTool-Info.plist */,
 				E4C372E415E7CC10007554D3 /* HelperTool-Launchd.plist */,
+				A1B2C3D400000000000000A2 /* com.aldunelabs.samplecode.authorization.plist */,
 				E4CD036C15E7A2C300FDC22C /* main.m */,
 				E4CBCCE515EBA7550081DF5C /* HelperTool.h */,
 				E4CBCCE615EBA7550081DF5C /* HelperTool.m */,
@@ -236,14 +297,16 @@
 			isa = PBXGroup;
 			children = (
 				DA70FCE81884E92A009FE52A /* README.md */,
+				DA70FCE71884E921009FE52A /* SMJobBlessUtil.py */,
+				E456726C15E7E4B80050ECAB /* Uninstall.sh */,
 				E4ED7B8515E79B83002AD912 /* App */,
 				E4AD7A891608DB4A00F594A2 /* App-Sandboxed */,
 				E4CBCCE815EBB50D0081DF5C /* Common */,
-				E4CD036B15E7A2C300FDC22C /* HelperTool */,
+				9BC3C37B309A02B600F2425A /* Tool */,
 				E4ED7B8215E79B83002AD912 /* Frameworks */,
+				E4CD036B15E7A2C300FDC22C /* HelperTool */,
 				E4ED7B8015E79B83002AD912 /* Products */,
-				E456726C15E7E4B80050ECAB /* Uninstall.sh */,
-				DA70FCE71884E921009FE52A /* SMJobBlessUtil.py */,
+				9BC3C36A3099F38600F2425A /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -251,9 +314,10 @@
 			isa = PBXGroup;
 			children = (
 				E4ED7B7F15E79B83002AD912 /* EvenBetterAuthorizationSample.app */,
-				E4CD036715E7A2C300FDC22C /* com.example.apple-samplecode.EBAS.HelperTool */,
-				E4C32DCB16023A97002AFAB3 /* com.example.apple-samplecode.EBAS.XPCService.xpc */,
+				E4CD036715E7A2C300FDC22C /* com.aldunelabs.caker.authorization */,
+				E4C32DCB16023A97002AFAB3 /* com.aldunelabs.caker.xpc.xpc */,
 				E4AD7A861608DB4A00F594A2 /* EvenBetterAuthorizationSample-Sandboxed.app */,
+				9BC3C373309A026300F2425A /* Tool */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -285,6 +349,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9BC3C372309A026300F2425A /* Tool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BC3C379309A026300F2425A /* Build configuration list for PBXNativeTarget "Tool" */;
+			buildPhases = (
+				9BC3C36F309A026300F2425A /* Sources */,
+				9BC3C370309A026300F2425A /* Frameworks */,
+				9BC3C371309A026300F2425A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			name = Tool;
+			productName = Tool;
+			productReference = 9BC3C373309A026300F2425A /* Tool */;
+			productType = "com.apple.product-type.tool";
+		};
 		E4AD7A851608DB4A00F594A2 /* App-Sandboxed */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E4AD7A941608DB4A00F594A2 /* Build configuration list for PBXNativeTarget "App-Sandboxed" */;
@@ -293,11 +372,14 @@
 				E4AD7A831608DB4A00F594A2 /* Frameworks */,
 				E4AD7A841608DB4A00F594A2 /* Resources */,
 				E4AD7AAA1608DC5F00F594A2 /* CopyFiles */,
+				B1B2C3D400000000000000B6 /* CopyFiles */,
+				B1B2C3D400000000000000B7 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				E4AD7AA81608DC3100F594A2 /* PBXTargetDependency */,
+				B1B2C3D400000000000000B5 /* PBXTargetDependency */,
 			);
 			name = "App-Sandboxed";
 			productName = "App-Sandboxed";
@@ -320,23 +402,21 @@
 			);
 			name = XPCService;
 			productName = XPCService;
-			productReference = E4C32DCB16023A97002AFAB3 /* com.example.apple-samplecode.EBAS.XPCService.xpc */;
+			productReference = E4C32DCB16023A97002AFAB3 /* com.aldunelabs.caker.xpc.xpc */;
 			productType = "com.apple.product-type.bundle";
 		};
-		E4CD036615E7A2C300FDC22C /* HelperTool */ = {
+		E4CD036615E7A2C300FDC22C /* Authorization */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E4CD036E15E7A2C300FDC22C /* Build configuration list for PBXNativeTarget "HelperTool" */;
+			buildConfigurationList = E4CD036E15E7A2C300FDC22C /* Build configuration list for PBXNativeTarget "Authorization" */;
 			buildPhases = (
 				E4CD036415E7A2C300FDC22C /* Sources */,
 				E4CD036515E7A2C300FDC22C /* Frameworks */,
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
-			name = HelperTool;
+			name = Authorization;
 			productName = HelperTool;
-			productReference = E4CD036715E7A2C300FDC22C /* com.example.apple-samplecode.EBAS.HelperTool */;
+			productReference = E4CD036715E7A2C300FDC22C /* com.aldunelabs.caker.authorization */;
 			productType = "com.apple.product-type.tool";
 		};
 		E4ED7B7E15E79B83002AD912 /* App */ = {
@@ -347,6 +427,7 @@
 				E4ED7B7C15E79B83002AD912 /* Frameworks */,
 				E4ED7B7D15E79B83002AD912 /* Resources */,
 				E4C32DDB16023B43002AFAB3 /* CopyFiles */,
+				A1B2C3D400000000000000A3 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -364,32 +445,33 @@
 		E4ED7B7615E79B83002AD912 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 2720;
 				LastUpgradeCheck = 0460;
 				TargetAttributes = {
+					9BC3C372309A026300F2425A = {
+						CreatedOnToolsVersion = 27.2;
+					};
 					E4AD7A851608DB4A00F594A2 = {
-						DevelopmentTeam = 9ZD5XCNS2R;
-					};
-					E4C32DCA16023A97002AFAB3 = {
-						DevelopmentTeam = 9ZD5XCNS2R;
-					};
-					E4CD036615E7A2C300FDC22C = {
-						DevelopmentTeam = 9ZD5XCNS2R;
+						DevelopmentTeam = LE7988HTRN;
+						ProvisioningStyle = Automatic;
 					};
 					E4ED7B7E15E79B83002AD912 = {
-						DevelopmentTeam = 9ZD5XCNS2R;
+						DevelopmentTeam = LE7988HTRN;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
 			buildConfigurationList = E4ED7B7915E79B83002AD912 /* Build configuration list for PBXProject "EvenBetterAuthorizationSample" */;
-			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 				de,
 			);
 			mainGroup = E4ED7B7415E79B83002AD912;
+			preferredProjectObjectVersion = 110;
 			productRefGroup = E4ED7B8015E79B83002AD912 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -397,7 +479,8 @@
 				E4ED7B7E15E79B83002AD912 /* App */,
 				E4AD7A851608DB4A00F594A2 /* App-Sandboxed */,
 				E4C32DCA16023A97002AFAB3 /* XPCService */,
-				E4CD036615E7A2C300FDC22C /* HelperTool */,
+				E4CD036615E7A2C300FDC22C /* Authorization */,
+				9BC3C372309A026300F2425A /* Tool */,
 			);
 		};
 /* End PBXProject section */
@@ -405,79 +488,78 @@
 /* Begin PBXResourcesBuildPhase section */
 		E4AD7A841608DB4A00F594A2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				E4AD7AAC1608DD8000F594A2 /* MainMenu-Sandboxed.xib in Resources */,
+				9BC3C36C3099F38600F2425A /* Assets.xcassets in Resources */,
 				E4AD7AB71609093B00F594A2 /* InfoPlist.strings in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E4C32DC916023A97002AFAB3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				E4C776011603A68300C72EC0 /* Common.strings in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E4ED7B7D15E79B83002AD912 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				E4CBCCF315EBC58D0081DF5C /* MainMenu.xib in Resources */,
 				E4CBCCF015EBC55F0081DF5C /* Common.strings in Resources */,
+				9BC3C36B3099F38600F2425A /* Assets.xcassets in Resources */,
 				E4CBCD2A15EC191D0081DF5C /* InfoPlist.strings in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9BC3C36F309A026300F2425A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				9BC3C37C309A02B600F2425A /* main.swift in Sources */,
+			);
+		};
 		E4AD7A821608DB4A00F594A2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				E4AD7A8F1608DB4A00F594A2 /* AppDelegate.m in Sources */,
 				E4AD7A911608DB4A00F594A2 /* main.m in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E4C32DC716023A97002AFAB3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				E4C32E781603536C002AFAB3 /* Common.m in Sources */,
 				E4AD7AC216090A3300F594A2 /* XPCService.m in Sources */,
 				E4AD7AC316090A3600F594A2 /* main.m in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E4CD036415E7A2C300FDC22C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				E4CD036D15E7A2C300FDC22C /* main.m in Sources */,
 				E4CBCCE715EBA7550081DF5C /* HelperTool.m in Sources */,
 				E4CBCCED15EBBB8D0081DF5C /* Common.m in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E4ED7B7B15E79B83002AD912 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				E4ED7B8B15E79B83002AD912 /* AppDelegate.m in Sources */,
 				E4ED7B8D15E79B83002AD912 /* main.m in Sources */,
 				E4CBCCEC15EBBB8D0081DF5C /* Common.m in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B1B2C3D400000000000000B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4CD036615E7A2C300FDC22C /* Authorization */;
+			targetProxy = B1B2C3D400000000000000B4 /* PBXContainerItemProxy */;
+		};
 		E4AD7AA61608DC2D00F594A2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E4CD036615E7A2C300FDC22C /* HelperTool */;
+			target = E4CD036615E7A2C300FDC22C /* Authorization */;
 			targetProxy = E4AD7AA51608DC2D00F594A2 /* PBXContainerItemProxy */;
 		};
 		E4AD7AA81608DC3100F594A2 /* PBXTargetDependency */ = {
@@ -487,7 +569,7 @@
 		};
 		E4C32DE816024D45002AFAB3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E4CD036615E7A2C300FDC22C /* HelperTool */;
+			target = E4CD036615E7A2C300FDC22C /* Authorization */;
 			targetProxy = E4C32DE716024D45002AFAB3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -543,67 +625,205 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		E4AD7A921608DB4A00F594A2 /* Debug */ = {
+		9BC3C377309A026300F2425A /* Debug configuration for PBXNativeTarget "Tool" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "App-Sandboxed/App-Sandboxed.entitlements";
-				CODE_SIGN_IDENTITY = "Developer ID Application";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = LE7988HTRN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aldunelabs.samplecode.tool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9BC3C378309A026300F2425A /* Release configuration for PBXNativeTarget "Tool" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_STYLE = Manual;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = LE7988HTRN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aldunelabs.samplecode.tool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E4AD7A921608DB4A00F594A2 /* Debug configuration for PBXNativeTarget "App-Sandboxed" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "App-Sandboxed/App-Sandboxed.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = LE7988HTRN;
 				INFOPLIST_FILE = "App-Sandboxed/App-Sandboxed-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = EvenBetterAuthorization;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aldunelabs.samplecode;
 				PRODUCT_NAME = "EvenBetterAuthorizationSample-Sandboxed";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		E4AD7A931608DB4A00F594A2 /* Release */ = {
+		E4AD7A931608DB4A00F594A2 /* Release configuration for PBXNativeTarget "App-Sandboxed" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "App-Sandboxed/App-Sandboxed.entitlements";
-				CODE_SIGN_IDENTITY = "Developer ID Application";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = LE7988HTRN;
 				INFOPLIST_FILE = "App-Sandboxed/App-Sandboxed-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = EvenBetterAuthorization;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aldunelabs.samplecode;
 				PRODUCT_NAME = "EvenBetterAuthorizationSample-Sandboxed";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
-		E4C32DD716023A97002AFAB3 /* Debug */ = {
+		E4C32DD716023A97002AFAB3 /* Debug configuration for PBXNativeTarget "XPCService" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = LE7988HTRN;
 				INFOPLIST_FILE = "App-Sandboxed/XPCService/XPCService-Info.plist";
 				MACH_O_TYPE = mh_execute;
-				PRODUCT_NAME = "com.example.apple-samplecode.EBAS.XPCService";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aldunelabs.samplecode.xpc;
+				PRODUCT_NAME = com.aldunelabs.caker.xpc;
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = xpc;
 			};
 			name = Debug;
 		};
-		E4C32DD816023A97002AFAB3 /* Release */ = {
+		E4C32DD816023A97002AFAB3 /* Release configuration for PBXNativeTarget "XPCService" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = LE7988HTRN;
 				INFOPLIST_FILE = "App-Sandboxed/XPCService/XPCService-Info.plist";
 				MACH_O_TYPE = mh_execute;
-				PRODUCT_NAME = "com.example.apple-samplecode.EBAS.XPCService";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aldunelabs.samplecode.xpc;
+				PRODUCT_NAME = com.aldunelabs.caker.xpc;
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = xpc;
 			};
 			name = Release;
 		};
-		E4CD036F15E7A2C300FDC22C /* Debug */ = {
+		E4CD036F15E7A2C300FDC22C /* Debug configuration for PBXNativeTarget "Authorization" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = LE7988HTRN;
 				INFOPLIST_FILE = "HelperTool/HelperTool-Info.plist";
 				OTHER_LDFLAGS = (
 					"-sectcreate",
@@ -615,17 +835,22 @@
 					__launchd_plist,
 					"HelperTool/HelperTool-Launchd.plist",
 				);
-				PRODUCT_NAME = "com.example.apple-samplecode.EBAS.HelperTool";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aldunelabs.samplecode.authorization;
+				PRODUCT_NAME = com.aldunelabs.caker.authorization;
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		E4CD037015E7A2C300FDC22C /* Release */ = {
+		E4CD037015E7A2C300FDC22C /* Release configuration for PBXNativeTarget "Authorization" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = LE7988HTRN;
 				INFOPLIST_FILE = "HelperTool/HelperTool-Info.plist";
 				OTHER_LDFLAGS = (
 					"-sectcreate",
@@ -637,13 +862,15 @@
 					__launchd_plist,
 					"HelperTool/HelperTool-Launchd.plist",
 				);
-				PRODUCT_NAME = "com.example.apple-samplecode.EBAS.HelperTool";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aldunelabs.samplecode.authorization;
+				PRODUCT_NAME = com.aldunelabs.caker.authorization;
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
-		E4ED7B8E15E79B83002AD912 /* Debug */ = {
+		E4ED7B8E15E79B83002AD912 /* Debug configuration for PBXProject "EvenBetterAuthorizationSample" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -683,13 +910,13 @@
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_PARAMETER = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
-		E4ED7B8F15E79B83002AD912 /* Release */ = {
+		E4ED7B8F15E79B83002AD912 /* Release configuration for PBXProject "EvenBetterAuthorizationSample" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -729,32 +956,52 @@
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_PARAMETER = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		E4ED7B9115E79B83002AD912 /* Debug */ = {
+		E4ED7B9115E79B83002AD912 /* Debug configuration for PBXNativeTarget "App" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = LE7988HTRN;
 				INFOPLIST_FILE = "App/App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = EvenBetterAuthorization;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aldunelabs.samplecode;
 				PRODUCT_NAME = EvenBetterAuthorizationSample;
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "Sample Code App";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		E4ED7B9215E79B83002AD912 /* Release */ = {
+		E4ED7B9215E79B83002AD912 /* Release configuration for PBXNativeTarget "App" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = LE7988HTRN;
 				INFOPLIST_FILE = "App/App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = EvenBetterAuthorization;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aldunelabs.samplecode;
 				PRODUCT_NAME = EvenBetterAuthorizationSample;
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "Sample Code App";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -762,49 +1009,52 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9BC3C379309A026300F2425A /* Build configuration list for PBXNativeTarget "Tool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BC3C377309A026300F2425A /* Debug configuration for PBXNativeTarget "Tool" */,
+				9BC3C378309A026300F2425A /* Release configuration for PBXNativeTarget "Tool" */,
+			);
+			defaultConfigurationName = Release;
+		};
 		E4AD7A941608DB4A00F594A2 /* Build configuration list for PBXNativeTarget "App-Sandboxed" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E4AD7A921608DB4A00F594A2 /* Debug */,
-				E4AD7A931608DB4A00F594A2 /* Release */,
+				E4AD7A921608DB4A00F594A2 /* Debug configuration for PBXNativeTarget "App-Sandboxed" */,
+				E4AD7A931608DB4A00F594A2 /* Release configuration for PBXNativeTarget "App-Sandboxed" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		E4C32DD616023A97002AFAB3 /* Build configuration list for PBXNativeTarget "XPCService" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E4C32DD716023A97002AFAB3 /* Debug */,
-				E4C32DD816023A97002AFAB3 /* Release */,
+				E4C32DD716023A97002AFAB3 /* Debug configuration for PBXNativeTarget "XPCService" */,
+				E4C32DD816023A97002AFAB3 /* Release configuration for PBXNativeTarget "XPCService" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E4CD036E15E7A2C300FDC22C /* Build configuration list for PBXNativeTarget "HelperTool" */ = {
+		E4CD036E15E7A2C300FDC22C /* Build configuration list for PBXNativeTarget "Authorization" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E4CD036F15E7A2C300FDC22C /* Debug */,
-				E4CD037015E7A2C300FDC22C /* Release */,
+				E4CD036F15E7A2C300FDC22C /* Debug configuration for PBXNativeTarget "Authorization" */,
+				E4CD037015E7A2C300FDC22C /* Release configuration for PBXNativeTarget "Authorization" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		E4ED7B7915E79B83002AD912 /* Build configuration list for PBXProject "EvenBetterAuthorizationSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E4ED7B8E15E79B83002AD912 /* Debug */,
-				E4ED7B8F15E79B83002AD912 /* Release */,
+				E4ED7B8E15E79B83002AD912 /* Debug configuration for PBXProject "EvenBetterAuthorizationSample" */,
+				E4ED7B8F15E79B83002AD912 /* Release configuration for PBXProject "EvenBetterAuthorizationSample" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		E4ED7B9015E79B83002AD912 /* Build configuration list for PBXNativeTarget "App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E4ED7B9115E79B83002AD912 /* Debug */,
-				E4ED7B9215E79B83002AD912 /* Release */,
+				E4ED7B9115E79B83002AD912 /* Debug configuration for PBXNativeTarget "App" */,
+				E4ED7B9215E79B83002AD912 /* Release configuration for PBXNativeTarget "App" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */

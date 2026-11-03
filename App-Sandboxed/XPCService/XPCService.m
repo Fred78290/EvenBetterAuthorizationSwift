@@ -50,8 +50,6 @@
 #import "Common.h"
 #import "HelperTool.h"
 
-#include <ServiceManagement/ServiceManagement.h>
-
 @interface XPCService () <NSXPCListenerDelegate, XPCServiceProtocol>
 
 @property (atomic, strong, readonly ) NSXPCListener *    listener;
@@ -118,28 +116,6 @@
     [newConnection resume];
     
     return YES;
-}
-
-- (void)installHelperToolWithReply:(void(^)(NSError * error))reply
-    // Part of XPCServiceProtocol.  Called by the app to install the helper tool.
-{
-    Boolean             success;
-    CFErrorRef          error;
-    
-    success = SMJobBless(
-        kSMDomainSystemLaunchd,
-        CFSTR("com.example.apple-samplecode.EBAS.HelperTool"),
-        self->_authRef,
-        &error
-    );
-
-    if (success) {
-        reply(nil);
-    } else {
-        assert(error != NULL);
-        reply((__bridge NSError *) error);
-        CFRelease(error);
-    }
 }
 
 - (void)setupAuthorizationRights

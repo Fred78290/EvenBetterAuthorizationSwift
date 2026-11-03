@@ -245,20 +245,27 @@
 #pragma mark * IB Actions
 
 - (IBAction)installAction:(id)sender
-    // Called when the user clicks the Install button.  This calls the XPC service to 
-    // install the tool on our behalf.
+    // Called when the user clicks the Install button.  This uses SMAppService (which replaces the deprecated SMJobBless)
+    // to register the launch daemon whose plist is embedded in the app's Contents/Library/LaunchDaemons directory.
+    // It must run in the app itself (not the XPC service) because SMAppService looks in the main bundle.
 {
     #pragma unused(sender)
-    [self connectToXPCService];
-    [[self.xpcServiceConnection remoteObjectProxyWithErrorHandler:^(NSError * proxyError) {
-        [self logError:proxyError];
-    }] installHelperToolWithReply:^(NSError * replyError) {
-        if (replyError == nil) {
-            [self logWithFormat:@"success\n"];
-        } else {
-            [self logError:replyError];
+
+    SMAppService *      service;
+    NSError *           error;
+
+    service = [SMAppService daemonServiceWithPlistName:@"com.aldunelabs.samplecode.authorization.plist"];
+
+    error = nil;
+    if ([service registerAndReturnError:&error]) {
+        [self logWithFormat:@"success\n"];
+    } else {
+        [self logError:error];
+        if (service.status == SMAppServiceStatusRequiresApproval) {
+            // The user must approve the daemon in System Settings > General > Login Items.
+            [SMAppService openSystemSettingsLoginItems];
         }
-    }];
+    }
 }
 
 - (IBAction)getVersionAction:(id)sender

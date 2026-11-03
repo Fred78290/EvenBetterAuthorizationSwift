@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>com.example.apple-samplecode.EBAS.HelperTool</string>
+	<string>com.aldunelabs.samplecode.authorization</string>
 	<key>MachServices</key>
 	<dict>
-		<key>com.example.apple-samplecode.EBAS.HelperTool</key>
+		<key>com.aldunelabs.samplecode.authorization - 2</key>
 		<true/>
 	</dict>
 </dict>

@@ -50,14 +50,11 @@
 // When the app is sandboxed it can't install the helper tool or even talk to it directly. 
 // In that case it uses an non-sandboxed XPC server to do that work.
 
-#define kXPCServiceName @"com.example.apple-samplecode.EBAS.XPCService"
+#define kXPCServiceName @"com.aldunelabs.samplecode.xpc"
 
 @protocol XPCServiceProtocol
 
 @required
-
-- (void)installHelperToolWithReply:(void(^)(NSError * error))reply;
-    // Called by the app to install the helper tool.
 
 - (void)setupAuthorizationRights;
     // Called by the app at startup time to set up our authorization rights in the 

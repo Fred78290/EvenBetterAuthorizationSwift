@@ -50,7 +50,7 @@
 // kHelperToolMachServiceName is the Mach service name of the helper tool.  Note that the value 
 // here has to match the value in the MachServices dictionary in "HelperTool-Launchd.plist".
 
-#define kHelperToolMachServiceName @"com.example.apple-samplecode.EBAS.HelperTool"
+#define kHelperToolMachServiceName @"com.aldunelabs.samplecode.authorization"
 
 // HelperToolProtocol is the NSXPCConnection-based protocol implemented by the helper tool 
 // and called by the app.

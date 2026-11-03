@@ -83,28 +83,28 @@ static NSString * kCommandKeyAuthRightDesc    = @"authRightDescription";
 {
     static dispatch_once_t sOnceToken;
     static NSDictionary *  sCommandInfo;
-    
+
     dispatch_once(&sOnceToken, ^{
         sCommandInfo = @{
             NSStringFromSelector(@selector(readLicenseKeyAuthorization:withReply:)) : @{
-                kCommandKeyAuthRightName    : @"com.example.apple-samplecode.EBAS.readLicenseKey", 
-                kCommandKeyAuthRightDefault : @kAuthorizationRuleClassAllow, 
+                kCommandKeyAuthRightName    : @"com.aldunelabs.samplecode.authorization.readLicenseKey",
+                kCommandKeyAuthRightDefault : @kAuthorizationRuleClassAllow,
                 kCommandKeyAuthRightDesc    : NSLocalizedString(
                     @"EBAS is trying to read its license key.", 
                     @"prompt shown when user is required to authorize to read the license key"
                 )
             },
             NSStringFromSelector(@selector(writeLicenseKey:authorization:withReply:)) : @{
-                kCommandKeyAuthRightName    : @"com.example.apple-samplecode.EBAS.writeLicenseKey", 
-                kCommandKeyAuthRightDefault : @kAuthorizationRuleAuthenticateAsAdmin, 
+                kCommandKeyAuthRightName    : @"com.aldunelabs.samplecode.authorization.writeLicenseKey",
+                kCommandKeyAuthRightDefault : @kAuthorizationRuleAuthenticateAsAdmin,
                 kCommandKeyAuthRightDesc    : NSLocalizedString(
                     @"EBAS is trying to write its license key.", 
                     @"prompt shown when user is required to authorize to write the license key"
                 )
             },
             NSStringFromSelector(@selector(bindToLowNumberPortAuthorization:withReply:)) : @{
-                kCommandKeyAuthRightName    : @"com.example.apple-samplecode.EBAS.startWebService", 
-                kCommandKeyAuthRightDefault : @kAuthorizationRuleClassAllow, 
+                kCommandKeyAuthRightName    : @"com.aldunelabs.samplecode.authorization.startWebService",
+                kCommandKeyAuthRightDefault : @kAuthorizationRuleClassAllow,
                 kCommandKeyAuthRightDesc    : NSLocalizedString(
                     @"EBAS is trying to start its web service.", 
                     @"prompt shown when user is required to authorize to start the web service"

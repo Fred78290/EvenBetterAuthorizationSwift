@@ -15,7 +15,27 @@ final class HelperTool: NSObject, NSXPCListenerDelegate, HelperToolProtocol {
 
     private let listener: NSXPCListener
 
-    override init() {
+	/// The code signing requirement of a client: one of the app's executables, signed by the helper's own team.
+	private static let clientRequirement: String? = {
+		var code: SecCode?
+		var staticCode: SecStaticCode?
+		var information: CFDictionary?
+
+		guard SecCodeCopySelf([], &code) == errSecSuccess, let code, SecCodeCopyStaticCode(code, [], &staticCode) == errSecSuccess, let staticCode,
+			SecCodeCopySigningInformation(staticCode, SecCSFlags(rawValue: kSecCSSigningInformation), &information) == errSecSuccess,
+			let team = (information as? [String: Any])?[kSecCodeInfoTeamIdentifier as String] as? String
+		else {
+			return nil
+		}
+
+		let identifiers = ["com.aldunelabs.samplecode", "com.aldunelabs.samplecode.tool", "com.aldunelabs.samplecode.xpc"]
+			.map { "identifier \"\($0)\"" }
+			.joined(separator: " or ")
+
+		return "(\(identifiers)) and anchor apple generic and certificate leaf[subject.OU] = \"\(team)\""
+	}()
+
+	override init() {
         // Set up our XPC listener to handle requests on our Mach service.
         listener = NSXPCListener(machServiceName: kHelperToolMachServiceName)
         super.init()
@@ -34,7 +54,15 @@ final class HelperTool: NSObject, NSXPCListenerDelegate, HelperToolProtocol {
     /// Called by our XPC listener when a new connection comes in.  We configure the connection with
     /// our protocol and ourselves as the main object.
     func listener(_ listener: NSXPCListener, shouldAcceptNewConnection newConnection: NSXPCConnection) -> Bool {
-        newConnection.exportedInterface = NSXPCInterface(with: HelperToolProtocol.self)
+		// Only the app's own executables, signed by the same team as the helper, may talk to it. An ad-hoc signed build
+		// (development) has no team to compare with: it is accepted, as the authorization rights still apply.
+		if let requirement = Self.clientRequirement {
+			newConnection.setCodeSigningRequirement(requirement)
+		} else {
+			NSLog("Helper is not signed by a team: XPC clients are not verified")
+		}
+
+		newConnection.exportedInterface = NSXPCInterface(with: HelperToolProtocol.self)
         newConnection.exportedObject = self
         newConnection.resume()
         return true
